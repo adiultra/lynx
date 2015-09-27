@@ -3,7 +3,7 @@ body {
     margin: 0px;
     z-index: -5;
     position: relative;
-    background-attachment: fixed;
+    background-repeat: repeat;
 }
 
 
@@ -15,7 +15,7 @@ div#box{
     margin-top: 0%;
     padding-bottom: 10%;
     border-bottom: 20px solid rgb(74, 184, 255);
-    box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.7);
+    box-shadow: 0px 5px 10px rgba(0, 0, 0, 1);
     z-index: -4;
     position: relative;
 }
@@ -51,10 +51,12 @@ div.menu{
     background-color: rgb(74, 184, 255);
     z-index: 10;
     box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.6);
+    position: sticky;
+    top: 0px;
 }
 .menu ul, a, li{
     font-weight: normal;
-    font-family: Raleway;
+    font-family: Open Sans;
     text-decoration: none;
 }
 div.menu ul{
@@ -63,14 +65,14 @@ div.menu ul{
 }
 div.menu li{
     padding-right: 10%;
-    font-size: 28px;
+    font-size: 120%;
     display: inline;
 }
 div.menu a{
     color: rgb(255, 255, 255);
     display: inline-block;
-    padding-top: 12px;
-    padding-bottom: 12px;
+    padding-top: 1%;
+    padding-bottom: 1%;
     border-bottom: 4px solid rgba(255, 255, 255, 0);
     transition: all 0.5s ease-in-out 0s;
 }
@@ -100,50 +102,60 @@ div.menu a:hover {
 }
 .content a {
     text-decoration: none;
-    color: inherit;
+    color: rgb(60, 152, 212);
 }
 .content a:visited {
     text-decoration: none;
-    color: inherit;
+    color: rgb(68, 149, 175);
 }
 .content h1 {
-    color: rgb(54, 157, 255);
-    font-weight: 300;
+    color: rgb(60, 152, 212);
+    font-weight: 500;
     font-size: 44px;
 }
 .content h2 {
-    color: rgb(54, 157, 255);
+    color: rgb(60, 152, 212);
     font-weight: 500;
-    font-size: 36px;
+    font-size: 32px;
 }
 .content h3 {
-    color: rgb(54, 157, 255);
+    color: rgb(60, 152, 212);
     font-weight: 400;
-    font-size: 30px;
+    font-size: 26px;
+}
+.content p {
+    text-indent: 20px;
+    padding-top: 4px;
+    padding-bottom: 4px;
 }
 .content p a {
-    color: rgb(54, 157, 255);
+    color: rgb(60, 152, 212);
     font-size: 18px;
-    transition: all 0.5s ease-in-out 0s;
+    transition: all 0.3s ease-in-out 0s;
+    text-decoration-line: underline;
+    text-decoration-style: dotted;
 }
 .content p a:hover {
     border-radius: 3px;
+    text-decoration-line: none;
     padding: 2px;
     padding-left: 4px;
     padding-right: 4px;
+    background-color: rgba(255, 255, 255, 0.9);
     box-shadow: 0px 0px 3px rgba(0, 0, 0, 0.40);
 }
 .content p a:active {
     border-radius: 3px;
+    text-decoration-line: none;
     padding: 2px;
     padding-left: 4px;
     padding-right: 4px;
-    background-color: rgba(109, 195, 227, 0.3);
+    color: rgb(255, 255, 255);
+    background-color: rgba(109, 195, 227, 1);
     box-shadow: 0px 0px 3px rgba(0, 0, 0, 0.80);
 }
 .content hr {
     border: 2px solid rgb(75, 165, 249);
-    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.5);
 }
 .content li {
     list-style-image: url(../image/list.png);
@@ -159,8 +171,38 @@ div#footer{
     text-align: center;
     color:rgb(216, 247, 254);
     background-color: rgba(0, 0, 0, 0.4);
-    font-size: 14px;
+    font-size: 16px;
     padding-top: 48px;
     padding-bottom: 48px;
     z-index: -10;
+}
+div#footer a {
+    color: rgb(87, 189, 255);
+    transition: all 0.3s ease-in-out 0s;
+    text-decoration-line: underline;
+    text-decoration-style: dotted;
+}
+div#footer a:hover {
+    border-radius: 3px;
+    text-decoration-line: none;
+    padding: 2px;
+    padding-left: 4px;
+    padding-right: 4px;
+    background-color: rgba(255, 255, 255, 0.3);
+    box-shadow: 0px 0px 3px rgba(0, 0, 0, 0.40);
+}
+div#footer a:active {
+    border-radius: 3px;
+    text-decoration-line: none;
+    padding: 2px;
+    padding-left: 4px;
+    padding-right: 4px;
+    color: rgb(255, 255, 255);
+    background-color: rgba(109, 195, 227, 1);
+    box-shadow: 0px 0px 3px rgba(0, 0, 0, 0.80);
+}
+
+div#footer p{
+    color: rgb(171, 171, 171);
+    font-size: 10px;
 }
