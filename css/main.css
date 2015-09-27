@@ -1,8 +1,9 @@
 body {
-    background-color: rgb(240, 247, 249);
+    background-image: url(../image/bg.png);
     margin: 0px;
     z-index: -5;
     position: relative;
+    background-attachment: fixed;
 }
 
 
@@ -10,7 +11,7 @@ body {
 div#box{
     padding-left: 20%;
     padding-right: 20%;
-    margin-bottom: 24px;
+    margin-bottom: 0px;
     margin-top: 0%;
     padding-bottom: 10%;
     border-bottom: 20px solid rgb(74, 184, 255);
@@ -23,18 +24,20 @@ div#box{
 /*header*/
 div#header h1 {
     font-family: Raleway;
-    font-weight: 200;
-    color: rgb(74, 184, 255);
+    font-weight: 400;
+    color: rgb(152, 205, 255);
     font-size: 48px;
     margin: 0px;
     padding-top: 6%;
     padding-bottom: 0%;
+    text-shadow: 0px 0px 2px rgba(0, 0, 0, 0.88);
 }
 div#header h2 {
     font-family: Raleway;
     font-weight: normal;
-    color: rgb(74, 184, 255);
+    color: rgb(152, 205, 255);
     font-size: 32px;
+    text-shadow: 0px 0px 2px rgba(0, 0, 0, 0.88);
 }
 div#header img {
     height: 58px;
@@ -56,7 +59,6 @@ div.menu{
 }
 div.menu ul{
     list-style: none;
-    margin-right: 100%;
     display: inline;
 }
 div.menu li{
@@ -105,22 +107,22 @@ div.menu a:hover {
     color: inherit;
 }
 .content h1 {
-    color: rgb(75, 165, 249);
+    color: rgb(54, 157, 255);
     font-weight: 300;
     font-size: 44px;
 }
 .content h2 {
-    color: rgb(75, 165, 249);
-    font-weight: 300;
+    color: rgb(54, 157, 255);
+    font-weight: 500;
     font-size: 36px;
 }
 .content h3 {
-    color: rgb(75, 165, 249);
-    font-weight: normal;
+    color: rgb(54, 157, 255);
+    font-weight: 400;
     font-size: 30px;
 }
 .content p a {
-    color: rgb(61, 135, 204);
+    color: rgb(54, 157, 255);
     font-size: 18px;
     transition: all 0.5s ease-in-out 0s;
 }
@@ -141,18 +143,24 @@ div.menu a:hover {
 }
 .content hr {
     border: 2px solid rgb(75, 165, 249);
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.5);
 }
 .content li {
     list-style-image: url(../image/list.png);
+}
+.content pre {
+    border-left: 10px solid rgb(75, 165, 249);
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.3);
 }
 
 
 /*Footer*/
 div#footer{
     text-align: center;
-    color:rgb(17, 17, 24);
+    color:rgb(216, 247, 254);
+    background-color: rgba(0, 0, 0, 0.4);
     font-size: 14px;
-    padding-top: 24px;
-    padding-bottom: 24px;
+    padding-top: 48px;
+    padding-bottom: 48px;
     z-index: -10;
 }
