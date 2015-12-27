@@ -1,0 +1,592 @@
+@import url("pygment.css");
+body {
+	margin: 30px 0px 0px 0px;
+	padding: 0;
+
+	color: #373737;
+	background: #fafafa;
+
+	font-family: "Open Sans", sans-serif;
+	font-size: 14px;
+}
+.summary h2{color:black;font-size:1.6em; }
+h1, h2, h3 {
+	margin: 0;
+	padding: 0;
+
+	color: #2d3844;
+
+	font-weight: normal;
+}
+
+p, ul, ol {
+	margin-top: 0;
+
+	line-height: 180%;
+}
+
+ul, ol {
+}
+
+a {
+	text-decoration: none;
+
+	color: #61a0ff;
+}
+
+a:hover {
+}
+
+div#lable{
+	position: absolute;
+
+	display: block;
+	float: right;
+
+	text-decoration: none;
+
+	font-family: "Open Sans", sans-serif;
+	font-size: 300%;
+}
+
+#wrapper {
+	margin: 0 auto;
+	padding: 0;
+}
+
+/*
+██       ██████   ██████   ██████
+██      ██    ██ ██       ██    ██
+██      ██    ██ ██   ███ ██    ██
+██      ██    ██ ██    ██ ██    ██
+███████  ██████   ██████   ██████
+*/
+
+#logo {
+	margin: 0;
+	padding: 0;
+
+	color: #61a0ff;
+}
+
+#logo h1, #logo p {
+	margin: 0%;
+	margin-left: -32%;
+	padding: 0;
+
+	text-align: center;
+	letter-spacing: -2px;
+
+	font-family: Gentium, Times, serif;
+}
+
+#logo h1 {
+	margin: 0px;
+	padding: 0px;
+
+	color: #05b8da;
+
+	font-size: 300%;
+}
+
+#logo h1 a {
+	color: #61a0ff;
+}
+
+#logo p {
+	margin: 0px;
+	padding: 0px;
+
+	font-size: 26px;
+}
+
+#logo a {
+	text-decoration: none;
+
+	color: #61a0ff;
+	border: none;
+	background: none;
+}
+
+/*
+███████ ███████  █████  ██████   ██████ ██   ██
+██      ██      ██   ██ ██   ██ ██      ██   ██
+███████ █████   ███████ ██████  ██      ███████
+     ██ ██      ██   ██ ██   ██ ██      ██   ██
+███████ ███████ ██   ██ ██   ██  ██████ ██   ██
+*/
+
+#search {
+	width: 280px;
+	height: 50px;
+	padding: 20px 0px 0px 0px;
+
+	background: rgb(140, 240, 194) no-repeat left 15px;
+}
+
+#search form {
+	margin: 0px 0px 0px 0px;
+	padding: 0px 0px 0px 0px;
+}
+
+#search fieldset {
+	margin: 0;
+	padding: 0;
+
+	border: none;
+}
+
+#search-text {
+	width: 190px;
+	padding: 0px 5px 2px 10px;
+
+	text-transform: lowercase;
+
+	color: #61a0ff;
+	border: none;
+	background: none;
+
+	font: normal 11px "Open Sans", sans-serif;
+}
+
+#search-submit {
+	width: 70px;
+	height: 22px;
+
+	text-indent: -99999px;
+
+	color: #61a0ff;
+	border: none;
+	border: none;
+	background: none;
+}
+
+/*
+███    ███ ███████ ███    ██ ██    ██
+████  ████ ██      ████   ██ ██    ██
+██ ████ ██ █████   ██ ██  ██ ██    ██
+██  ██  ██ ██      ██  ██ ██ ██    ██
+██      ██ ███████ ██   ████  ██████
+*/
+
+#menu {
+	width: 280px;
+	margin: 20px auto 20px auto;
+	padding: 0;
+}
+
+#menu ul {
+	margin: 0;
+	padding: 50px 0px 0px 0px;
+
+	list-style: none;
+
+	line-height: normal;
+}
+
+#menu li {
+
+}
+
+#menu a {
+	display: block;
+
+	width: 260px;
+	height: 27px;
+	margin: 0.5% 0px;
+	padding: 8px 0px 0px 20px;
+
+	text-decoration: none;
+	text-transform: capitalize;
+
+	color: rgb(33, 33, 33);
+
+	font-family: "Open Sans", sans-serif;
+	font-size: 14px;
+	font-weight: normal;
+}
+
+#menu a:hover, #menu .current_page_item a {
+	text-decoration: none;
+
+	color: #40a4e4;
+}
+
+#menu .current_page_item a {
+	display: block;
+
+	text-decoration: none;
+}
+
+/*
+██████   █████   ██████  ███████
+██   ██ ██   ██ ██       ██
+██████  ███████ ██   ███ █████
+██      ██   ██ ██    ██ ██
+██      ██   ██  ██████  ███████
+*/
+
+#page {
+	width: 80%;
+	margin: 0 auto;
+
+	background: rgb(255, 255, 255);
+	box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.3);
+}
+
+/*
+ ██████  ██████  ███    ██ ████████ ███████ ███    ██ ████████
+██      ██    ██ ████   ██    ██    ██      ████   ██    ██
+██      ██    ██ ██ ██  ██    ██    █████   ██ ██  ██    ██
+██      ██    ██ ██  ██ ██    ██    ██      ██  ██ ██    ██
+ ██████  ██████  ██   ████    ██    ███████ ██   ████    ██
+*/
+
+#content {
+	float: right;
+
+	width: 60%;
+	padding: 8% 11% 0px 0px;
+}
+
+.post {
+	margin-bottom: 10%;
+}
+
+.post .title {
+	padding: 0%;
+
+	letter-spacing: -.5px;
+
+	font-family: Gentium, Times, serif;
+}
+
+.post .title a {
+	color: #52483E;
+	border: none;
+}
+
+.post .meta {
+	margin-bottom: 0px;
+	padding: 1% 0% 0% 0%;
+
+	text-align: left;
+
+	font-family: "Open Sans", sans-serif;
+	font-size: 14px;
+	font-weight: normal;
+}
+
+.post .meta .date {
+	float: left;
+}
+
+.post .meta .posted {
+	float: right;
+}
+
+.post .meta a {
+}
+
+.post .entry {
+	padding: 0px 0px 20px 0px;
+
+	text-align: justify;
+
+	color:#565656;
+	border-bottom: 1px dotted #565656;
+
+	font-family: Merriweather;
+	font-size: 1.4em;
+	font-weight: lighter;
+}
+.post .entry dt {
+    font-weight:bold ;
+}
+
+.post img {
+	display: block;
+
+    margin:4%;
+	margin-right: auto;
+	margin-left: auto;
+
+    border: 10px solid rgb(255, 255, 255);
+	box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.1);
+}
+.post img:hover{
+	box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.33);
+}
+
+.summary img{
+    display:none;
+}
+.entry h1{
+	margin-top: 4%;
+	margin-bottom: 4%;
+
+    color: #1e3037;
+
+	font-size: 2.4em;
+	font-weight: normal;
+}
+.entry h2{
+	margin-top: 3%;
+	margin-bottom: 3%;
+
+    color: #2a2f36;
+
+    font-size: 1.9em;
+	font-weight: normal;
+}
+
+.entry h3{
+	margin-top: 3%;
+	margin-bottom: 2%;
+
+    color: #2a2f36;
+
+    font-size: 1.7em;
+	font-weight: normal;
+}
+.entry h4{
+	margin-top: 2%;
+	margin-bottom: 2%;
+
+    color: #2a2f36;
+
+    font-size: 1.6em;
+	font-weight: normal;
+}
+.entry h5{
+	margin-top: 1%;
+	margin-bottom: 2%;
+
+    color: #2a2f36;
+
+    font-size: 1.5em;
+	font-weight: normal;
+}
+.entry h6{
+	margin-top: 1%;
+	margin-bottom: 2%;
+
+    color: #2a2f36;
+
+    font-size: 1.4em;
+	font-weight: normal;
+}
+
+h2.title {
+    font-size:2.8em;
+}
+
+.highlight{
+    overflow: auto;
+
+	padding-left: 2%;
+
+	border-left: solid 4px #40a4e4;
+	background-color: #fff;
+	box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.1);
+}
+.highlight:hover{
+	box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.33);
+}
+.links {
+	padding-top: 20px;
+
+	font-size: 12px;
+	font-weight: bold;
+}
+
+/*
+███████ ██ ██████  ███████ ██████   █████  ██████
+██      ██ ██   ██ ██      ██   ██ ██   ██ ██   ██
+███████ ██ ██   ██ █████   ██████  ███████ ██████
+     ██ ██ ██   ██ ██      ██   ██ ██   ██ ██   ██
+███████ ██ ██████  ███████ ██████  ██   ██ ██   ██
+*/
+
+#sidebar {
+	float: left;
+
+	width: 10%;
+	margin: 0px;
+	padding: 4%;
+
+	text-overflow: clip;
+
+	color: rgba(120, 120, 120, 0.48);
+	border-right: 4px solid rgb(119, 172, 222);
+}
+#sidebar:hover{
+	color: rgba(120, 120, 120, 1);
+}
+
+#sidebar ul {
+	margin: 0;
+	padding: 0;
+
+	list-style: none;
+
+	color: rgba(120, 120, 120, 0.48);
+}
+#sidebar ul:hover{
+	color: rgba(120, 120, 120, 1);
+}
+#sidebar li {
+	margin: 0;
+	padding: 0;
+}
+
+#sidebar li ul {
+	margin: 0px 0px 0px 20px;
+	padding-bottom: 30px;
+}
+
+#sidebar li li {
+	border-left: none;
+
+	line-height: 35px;
+}
+
+#sidebar li li span {
+	display: block;
+
+	margin-top: -20px;
+	padding: 0;
+
+	font-size: 11px;
+	font-style: italic;
+}
+
+#sidebar li li a {
+	text-decoration: none;
+
+	color: inherit;
+}
+
+#sidebar li li a:hover {
+	color: #40a4e4;
+}
+
+#sidebar h2 {
+	height: 32px;
+
+	color: rgba(0, 0, 0, 0.5);
+
+	font-size: 1.2em;
+}
+#sidebar h2:hover{
+	color: rgba(48, 61, 92, 0.86);
+}
+#sidebar p {
+	margin: 0 0px;
+	padding: 0px 20px 20px 20px;
+}
+
+#sidebar a {
+	border: none;
+}
+
+#sidebar a:hover {
+}
+
+/*
+ ██████  █████  ██      ███████ ███    ██ ██████   █████  ██████
+██      ██   ██ ██      ██      ████   ██ ██   ██ ██   ██ ██   ██
+██      ███████ ██      █████   ██ ██  ██ ██   ██ ███████ ██████
+██      ██   ██ ██      ██      ██  ██ ██ ██   ██ ██   ██ ██   ██
+ ██████ ██   ██ ███████ ███████ ██   ████ ██████  ██   ██ ██   ██
+*/
+
+#calendar {
+}
+
+#calendar_wrap {
+	padding: 20px;
+}
+
+#calendar table {
+	width: 100%;
+}
+
+#calendar tbody td {
+	text-align: center;
+}
+
+#calendar #next {
+	text-align: right;
+}
+
+/*
+ █████  ██████   ██████ ██   ██ ██ ██    ██ ███████
+██   ██ ██   ██ ██      ██   ██ ██ ██    ██ ██
+███████ ██████  ██      ███████ ██ ██    ██ █████
+██   ██ ██   ██ ██      ██   ██ ██  ██  ██  ██
+██   ██ ██   ██  ██████ ██   ██ ██   ████   ███████
+*/
+
+div#article-section > div{
+	margin: 0px;
+
+	text-align: center;
+
+	font-size: 18px;
+}
+
+dl > h2.Archives-title {
+	padding-bottom: 20px;
+}
+
+div#article-section{
+	margin: 20px 0px;
+	padding: 12px 0px;
+
+	text-align: center;
+}
+div#article-section:hover{
+	box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.27);
+}
+div#article-title > a{
+	color: #61a0ff;
+
+	font-family: "Open Sans", sans-serif;
+	font-size: 32px;
+	font-weight: lighter;
+}
+
+/*
+███████  ██████   ██████  ████████ ███████ ██████
+██      ██    ██ ██    ██    ██    ██      ██   ██
+█████   ██    ██ ██    ██    ██    █████   ██████
+██      ██    ██ ██    ██    ██    ██      ██   ██
+██       ██████   ██████     ██    ███████ ██   ██
+*/
+
+#footer {
+	width: 920px;
+	height: 80px;
+	margin: 0 auto;
+	padding: 0px 0 15px 310px;
+
+	font-family: "Open Sans", sans-serif;
+}
+
+#footer p {
+	margin: 0;
+	padding-top: 20px;
+
+	text-align: center;
+	text-transform: uppercase;
+
+	color: #69635E;
+
+	font-size: 9px;
+	line-height: normal;
+}
+
+#footer a {
+	color: #474440;
+}
