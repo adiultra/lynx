@@ -1,64 +1,98 @@
+<!DOCTYPE html>
 <html>
 
 <head>
+
+	<title>Lynx - Articles by Adi Ultra</title>
 
 	<meta name="keywords" content="" />
 	<meta name="description" content="" />
 	<meta http-equiv="content-type" content="text/html; charset=utf-8" />
 
-	<title>Lynx - Articles by Adi Ultra</title>
+	<!-- favicon -->
+	<link rel="icon" type="image/png" href="http://adiultra.github.io/lynx/images/favicon.png">
 
-	<link href='https://fonts.googleapis.com/css?family=Open+Sans:400,300italic,300,400italic|Merriweather:400,300,300italic,400italic,700,700italic' rel='stylesheet' type='text/css'>	
+	<!-- Katex -->
+	<link rel="stylesheet" href="http://adiultra.github.io/lynx/theme/katex/katex.min.css">
+	<script src="http://adiultra.github.io/lynx/theme/katex/katex.min.js"></script>
+	<script src="http://adiultra.github.io/lynx/theme/katex/contrib/auto-render.min.js"></script>
+
+	<!-- Google font -->
+	<link href='https://fonts.googleapis.com/css?family=Open+Sans:400,300italic,300,400italic|Merriweather:400,300,300italic,400italic,700,700italic' rel='stylesheet' type='text/css'>
+
+	<!-- pygment highlighter -->
 	<link href="http://adiultra.github.io/lynx/theme/css/pygment.css" rel="stylesheet" type="text/css"/>
+
+	<!-- css -->
 	<link href="http://adiultra.github.io/lynx/theme/css/style.css" rel="stylesheet" type="text/css" media="screen" />
+
 	<link href="http://adiultra.github.io/lynx/" type="application/atom+xml" rel="alternate" title="Lynx ATOM Feed" />
 </head>
 
 <body>
 
-<div id="wrapper">
-
 	<div id="page">
-
-		<div id="page-bgtop">
-
-			<div id="page-bgbtm">
 
         		<div id="content">
 
         			<div class="post">
-        				<h2 class="title"><a href="http://adiultra.github.io/lynx/filler-text.html">Filler Text</a></h2>
+        				<h2 class="title"><a href="http://adiultra.github.io/lynx/a-light-intro-to-markdown.html">A Light intro to Markdown</a></h2>
 
                         <p class="meta">
-                            <span class="date">Date: Sun 27 December 2015 </span><span class="posted">By:  <a href="#">Adi Ultra</a></span><span>&nbsp; # Category: <a href="/category/lorem.html">Lorem</a></span>
+                            <span class="date">Date: Fri 15 January 2016 </span><span class="posted">By:  <a href="#">Adi Ultra</a></span><span>&nbsp; # Category: <a href="/category/programming.html">programming</a></span>
                         </p>
 
-                        <p class="meta">Tags :                         </p>
+                        <p class="meta">Tags :                             <span class="tag-span"><a class="tag-list" href="http://adiultra.github.io/lynx/tag/programming.html">programming</a> </span>
+                            <span class="tag-span"><a class="tag-list" href="http://adiultra.github.io/lynx/tag/blog.html">blog</a> </span>
+                            <span class="tag-span"><a class="tag-list" href="http://adiultra.github.io/lynx/tag/web.html">web</a> </span>
+                        </p>
 
         				<div style="clear: both;">&nbsp;</div>
 
         				<div class="entry">
-        				 <h1>The Story Goes</h1>
-<p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. Separated they live in Bookmarksgrove right at the coast of the Semantics, a large language ocean. A small river named Duden flows by their place and supplies it with the necessary regelialia. It is a paradisematic country, in which roasted parts of sentences fly into your mouth.</p>
-<h2>like this</h2>
-<p>Even the <em>all-powerful Pointing</em> has no control about the blind texts it is an almost unorthographic life One day however a small line of blind text by the name of <strong>Lorem Ipsum</strong> decided to leave for the far World of Grammar. The Big Oxmox advised her not to do so, because there were thousands of bad Commas, wild Question Marks and devious Semikoli, but the Little Blind Text didn’t listen.</p>
-<p>She packed her seven versalia, put her initial into the belt and made herself on the way. When she reached the first hills of the Italic Mountains, she had a last view back on the skyline of her hometown Bookmarksgrove, the headline of Alphabet Village and the subline of her own road, the Line Lane.</p>
-<ul>
-<li>Pityful a rethoric question</li>
-<li>ran over her cheek,</li>
-<li>then she continued her way.</li>
-</ul>
+        				 <h1>Markdown = Simpler HTML</h1>
+<p><a href="https://daringfireball.net/projects/markdown/">Markdown</a> created by the John Gruber, is simple text which is friendly to the eye and with an added benefit, it converts to HTML. Although not by itself, you need a program to convert it. But it is very easy to implement, read on. Many modern blogging services, forums related to programming, and Wikipedia itself, use markdown. Because its easy and plain.</p>
+<p>Here's an example:</p>
+<div class="highlight"><pre><span class="c"># This is first heading</span>
+
+<span class="n">Some</span> <span class="n">paragraph</span> <span class="n">text</span>
+
+<span class="c">## This is H2 tag</span>
+<span class="c">### H3, the first was H1</span>
+<span class="c">#### h4 and so on</span>
+
+    <span class="n">some</span> <span class="n">code</span> <span class="p">(</span><span class="n">indent</span> <span class="n">the</span> <span class="n">code</span><span class="p">);</span>
+</pre></div>
+
+
+<p>Which gives:</p>
 <blockquote>
-<p>On her way she met a copy. The copy warned the Little Blind Text, that where it came from it would have been rewritten a thousand times and everything that was left from its origin would be the word "and" and the Little Blind Text should turn around and return to its own, safe country. But nothing the copy said could convince her and so it didn’t take long until a few insidious Copy Writers ambushed her, made her drunk with Longe and Parole and dragged her into their agency, where they abused her for their projects again and again.</p>
+<h1>This is first heading</h1>
+<p>Some paragraph text</p>
+<h2>This is H2 tag</h2>
+<h3>H3, the first was H1</h3>
+<h4>h4 and so on</h4>
+<p><code>some code (indent the code);</code></p>
 </blockquote>
-<p>And if she hasn’t been rewritten, then they are still using her. Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. Separated they live in Bookmarksgrove right at the coast of the Semantics, a large language ocean. A small river named Duden flows by their place and supplies it with the necessary regelialia. It is a paradisematic country, in which roasted parts of sentences fly into your mouth. Even the all-powerful Pointing has no control about the blind texts it is an almost unorthographic life One</p>
-<h2>Gangsta</h2>
-<p>Lorizzle pimpin' its fo rizzle sizzle amizzle, nizzle adipiscing elit. Nullizzle sheezy velizzle, shizzlin dizzle dope, i'm in the shizzle get down get down, vizzle, arcu. Pellentesque mammasay mammasa mamma oo sa shiznit. Sed erizzle. Break yo neck, yall izzle you son of a bizzle dapibus mammasay mammasa mamma oo sa tempizzle shiz. Maurizzle pellentesque fo shizzle et i'm in the shizzle. Vestibulum izzle tortor. Pellentesque eleifend rhoncus nisi. In bizzle shiznit platea dictumst. Fizzle dapibizzle. Curabitur tellizzle urna, pretizzle hizzle, break it down izzle, eleifend shizzle my nizzle crocodizzle, sure. Bling bling suscipizzle. Integizzle sempizzle sed check out this.</p>
-<p>Praesent non bling bling nizzle mauris pizzle bibendizzle. Aliquizzle gizzle viverra lectus. Bow wow wow izzle shizznit et leo sodalizzle that's the shizzle. Aliquizzle bow wow wow, my shizz vitae dapibus gangsta, nulla ligula bibendizzle metus, et ma nizzle augue dui izzle arcu. Vivamizzle sheezy lacus id dang. Vivamus arcu own yo', get down get down sit fo shizzle, faucibizzle izzle, placerizzle ac, break it down. Sizzle black laorizzle ass. Vestibulizzle shiznit my shizz, shizzlin dizzle izzle, condimentizzle ac, malesuada shut the shizzle up, arcu. Morbi tellivizzle placerat nulla. Own yo' izzle erizzle that's the shizzle dang. Ass metus sem, egestas i'm in the shizzle, accumsizzle quizzle, elementum eget, neque. Bling bling iaculizzle nunc a orci fo shizzle gangsta. Fusce sagittis, nulla egizzle sollicitudizzle uhuh ... yih!, lacizzle quam dope erizzle, vitae tellivizzle augue purizzle sheezy arcu. Etiam vehicula lacizzle. Nunc sed nizzle. Duis ma nizzle turpizzle. Vestibulum a izzle. Sizzle turpizzle shizzlin dizzle, consectetuer fo shizzle mah nizzle fo rizzle, mah home g-dizzle, mofo izzle, facilisis in, dawg. I'm in the shizzle fo shizzle my nizzle. Nulla mammasay mammasa mamma oo sa erizzle, its fo rizzle dizzle we gonna chung, ultricizzle fo shizzle mah nizzle fo rizzle, mah home g-dizzle, tincidunt nizzle, dawg.</p>
-<p>Brizzle nizzle sizzle izzle leo bibendizzle molestie. Things you son of a bizzle tortizzle vizzle massa. Get down get down malesuada ornare magna. Ma nizzle get down get down, nisl nizzle stuff egestizzle, nizzle dolizzle vestibulum ligula, my shizz auctor justo dolizzle mah nizzle augue. Tellivizzle fo shut the shizzle up sizzle rizzle erizzle adipiscing dawg. Vivamus you son of a bizzle ut things. In ma nizzle break it down pizzle. Lorizzle sheezy dolizzle phat crackalackin, consectetizzle adipiscing check it out. Phasellus nisi ligula, daahng dawg sizzle sure, facilisizzle fo shizzle mah nizzle fo rizzle, mah home g-dizzle, pizzle you son of a bizzle, libero. Boofron bling bling faucibizzle dizzle. Funky fresh non yo mamma. Nunc sed risus nizzle dizzle bow wow wow egestas. Ghetto bling bling ma nizzle mofo fo shizzle. Aenean go to hizzle, pimpin' pizzle varizzle fo shizzle mah nizzle fo rizzle, mah home g-dizzle, lectizzle dizzle commodo get down get down, shiznit fo shizzle erizzle nisl mofo shiznit. Vivamizzle the bizzle quam, aliquet rizzle fizzle, ornare away, pulvinizzle shizznit, felis.</p>
-<p>In sagittizzle leo mofo nisi. Ghetto yippiyo, arcu fo shizzle malesuada sheezy, sem its fo rizzle aliquizzle we gonna chung, nizzle auctizzle nulla away a est. Suspendisse volutpizzle scelerisque owned. Sizzle shizznit lectus ut fo shizzle my nizzle. Proin i saw beyonces tizzles and my pizzle went crizzle boofron sapizzle. Etiam shiznit, dizzle ma nizzle accumsizzle tincidunt, bling bling fo shizzle mah nizzle fo rizzle, mah home g-dizzle ultricizzle sem, izzle vestibulum get down get down nisi sizzle mah nizzle purizzle. Maecenas fo shizzle tortor vizzle brizzle. Phasellizzle lobortis. Nulla lectus lacus, fo nizzle, aliquet sheezy shut the shizzle up, pulvinizzle egestizzle, augue. Funky fresh convallizzle. Vestibulizzle ante brizzle primizzle in uhuh ... yih! hizzle luctizzle izzle ultricizzle yo mamma cubilia Curae; Get down get down shiz cool eu pot bibendum condimentizzle. Gangster shizzle my nizzle crocodizzle fizzle, vulputate i saw beyonces tizzles and my pizzle went crizzle, semper things, commodo dawg, nisi. Etiam feugizzle, daahng dawg away tellivizzle i saw beyonces tizzles and my pizzle went crizzle, crackalackin justo tellivizzle lorizzle, id dawg mi urna vitae erizzle.</p>
-<p>Break it down ac metizzle izzle ma nizzle interdizzle aliquizzle. Stuff posuere. Yippiyo things ante. Tellivizzle leo pede, crazy for sure, gangster izzle, euismod ma nizzle, massa. Vestibulizzle bling bling. Ut vehicula ultricies leo. Sizzle vulputate, pizzle a suscipizzle vulputate, i saw beyonces tizzles and my pizzle went crizzle lacizzle commodo my shizz, izzle eleifend ass mofo fo shizzle metus. Sure feugizzle yo velizzle. Quisque neque sheezy, nonummy fo shizzle my nizzle, malesuada check it out, fo shizzle mah nizzle fo rizzle, mah home g-dizzle, elit. iaculizzle, uhuh ... yih! vizzle pretium hendrerit, shiznit nibh posuere nisl, dope tempor for sure dizzle sizzle fizzle rizzle. Aliquizzle black lacizzle non crackalackin gizzle dignissim. Quisque aliquizzle yo my shizz. Nam vehicula hendrerit maurizzle. Gizzle vehicula. Get down get down placerat cool a tellivizzle. Etizzle fo shizzle. Dizzle shiznit habitasse uhuh ... yih! dictumst. Pot izzle rizzle nizzle diam cool nizzle. Phasellizzle sheezy ante, da bomb shiz, fringilla a, fo shizzle nizzle, i saw beyonces tizzles and my pizzle went crizzle. Morbi vizzle nibh bizzle mofo boom shackalack fringilla.</p>
-<p>In gravida shit nizzle dang. Phat ass. Etizzle fizzle. Donizzle in mi a erizzle fo shizzle vehicula. Sizzle vizzle ipsum. Fo shizzle go to hizzle est dizzle lacus. Praesent a sheezy vitae shut the shizzle up euismod ullamcorpizzle. Integizzle fo shizzle my nizzle risizzle. Vivamus get down get down lacizzle vizzle its fo rizzle. Morbi egizzle justo. Rizzle eu dui tellivizzle dope crackalackin fo shizzle. Morbi rizzle, arcu crazy euismizzle pot, nisl shit adipiscing daahng dawg, cursus fizzle mi go to hizzle sizzle amizzle i'm in the shizzle. Morbi turpis. Yippiyo ante dope primis in faucibizzle shiz luctizzle izzle black posuere cubilia That's the shizzle; Shit bow wow wow, justo fo shizzle tincidunt tellivizzle, risizzle lorem get down get down nunc, a izzle urna away quizzle rizzle. Dizzle mammasay mammasa mamma oo sa erizzle at nulla. Phasellus accumsizzle. Its fo rizzle socizzle fo shizzle mah nizzle fo rizzle, mah home g-dizzle penatibus et magnizzle mah nizzle parturient montes, get down get down ridiculizzle mizzle. Proin shut the shizzle up crackalackin get down get down quam ultricizzle sheezy. Donizzle non mi.</p>
+<hr />
+<h2>Setup</h2>
+<blockquote>
+<p>or it should have been no setup :p</p>
+</blockquote>
+<p>You necessarily do not need anything to write in markdown other than a text editor, but since you might be intrested in publishing(blogging) in markdown, you can use any of the below</p>
+<h3>Markdown Blogging platforms/Websites</h3>
+<p>These are the sites with which you get a simple web interface, type in markdown, hit enter and your article goes live. If you need to really create your website then reach the next section.</p>
+<ul>
+<li><a href="https://svbtle.com/">Subvtle</a></li>
+<li><a href="https://medium.com/">Medium</a></li>
+<li><a href="https://roon.io/">Roon</a></li>
+<li><a href="http://pen.io/">Pen.io</a></li>
+</ul>
+<h3>Custom Blogs</h3>
+<ul>
+<li><a href="http://wardrobecms.com/">Wardrobe</a></li>
+<li><a href="http://dropplets.com/">Dropplets</a></li>
+</ul>
         				</div>
         			</div>
 
@@ -75,98 +109,78 @@
 
                     <div class="entry">
         				<h1>73 - The Prime</h1>
-<p>Sheldon: "The best number is 73. Why? 73 is the 21st prime number. Its mirror, 37, is the 12th and its mirror, 21, is the product of multiplying 7 and 3... and in binary 73 is a palindrome, 1001001, which backwards is 1001001."</p>
-<h1>h1</h1>
-<h2>h2</h2>
-<h3>h3</h3>
-<h4>h4 ...</h4>
+<p>Sheldon: "The best number is $73$. Why? 73 is the 21st prime number. Its mirror, 37, is the 12th and its mirror, 21, is the product of multiplying 7 and 3... and in binary 73 is a palindrome, 1001001, which backwards is 1001001."</p>
+<p>$$73_{10}=1001001_2$$</p>
+<p>Leonard ...</p>
                         <br />
-        				<a class="readmore" href="/my-prime-fav.html">Read More >></a>
-    				</div>
-			    </div>
-
-                <div class="post summary">
-				    <h2 class="title"><a href="http://adiultra.github.io/lynx/my-first-review.html">My First Review</a></h2>
-				    <p class="meta"><span class="date">Date Thu 03 December 2015</span><span class="posted">By <a href="#">Adi Ultra</a></span></p>
-
-                    <div style="clear: both;">&nbsp;</div>
-
-                    <div class="entry">
-        				<h1>Hiesne Bergos</h1>
-<p>Following is a review of my favorite mechanical keyboard.</p>
-<p>Lists:</p>
-<ul>
-<li>cool</li>
-<li>damn</li>
-<li>good</li>
-</ul>
-<p>Integer porttitor tortor convallis eros luctus iaculis. Aliquam erat volutpat. Sed consequat, ante eu maximus placerat, magna enim dictum ante, at suscipit nisi neque quis justo. Suspendisse sollicitudin justo nec accumsan imperdiet. Praesent ut mattis ...</p>
-                        <br />
-        				<a class="readmore" href="/my-first-review.html">Read More >></a>
+        				<a class="readmore" href="http://adiultra.github.io/lynx/my-prime-fav.html">Read More >></a>
     				</div>
 			    </div>
 	<div style="clear: both;">&nbsp;</div>
 	</div>
 
-				<div id="sidebar">
+			<div id="sidebar">
 
-					<div id="logo">
-						<h1><a href="http://adiultra.github.io/lynx/index.html">Lynx</a></h1>
-					</div>
+				<div id="logo">
+					<h1><a href="http://adiultra.github.io/lynx/index.html">Lynx</a></h1>
+				</div>
 
-					<div id="menu">
-
-						<ul>
-							<li ><a href="http://adiultra.github.io/lynx/index.html">Home</a></li>
-							<li ><a href="http://adiultra.github.io/lynx/archives.html">Archives</a></li>
-						</ul>
-					</div>
+				<div id="menu">
 
 					<ul>
-						<li>
-							<h2>Categories</h2>
-
-							<ul>
-								 <li ><a href="http://adiultra.github.io/lynx/category/lorem.html">Lorem</a></li>
-								 <li ><a href="http://adiultra.github.io/lynx/category/prime.html">Prime</a></li>
-								 <li ><a href="http://adiultra.github.io/lynx/category/review.html">Review</a></li>
-
-							</ul>
-
-						</li>
-						<li>
-
-							<h2>Blog Roll</h2>
-							<ul>
-                                <li><a href="http://getpelican.com/">Pelican</a></li>
-                                <li><a href="http://python.org/">Python.org</a></li>
-                                <li><a href="#">Arcxon Corp</a></li>
-							</ul>
-						</li>
-
-                        <li>
-                                <h2>Social</h2>
-                                <ul>
-
-                                    <li><a href="http://adiultra.github.io/lynx/" rel="alternate">Flux Atom</a></li>
-
-
-                                    <li><a href="https://twitter.com/adityaultra">Twitter</a></li>
-                                    <li><a href="#">Telegram</a></li>
-                                </ul>
-                        </li>
-
-						<li>
-								<h2>Tags</h2>
-								<ul>
-								</ul>
-						</li>
-
+						<li ><a href="http://adiultra.github.io/lynx/index.html">Home</a></li>
+						<li ><a href="http://adiultra.github.io/lynx/archives.html">Archives</a></li>
 					</ul>
 				</div>
-				<div style="clear: both;">&nbsp;</div>
+
+				<ul>
+					<li>
+						<h2>Categories</h2>
+
+						<ul>
+							 <li ><a href="http://adiultra.github.io/lynx/category/prime.html">Prime</a></li>
+							 <li ><a href="http://adiultra.github.io/lynx/category/programming.html">programming</a></li>
+
+						</ul>
+
+					</li>
+
+					<li>
+							<h2><a href="http://adiultra.github.io/lynx/tags.html" id="tag-sdbar">Tags</a></h2>
+							<ul>
+									<li><a href="http://adiultra.github.io/lynx/tag/blog.html">blog</a></li>
+									<li><a href="http://adiultra.github.io/lynx/tag/programming.html">programming</a></li>
+									<li><a href="http://adiultra.github.io/lynx/tag/math.html">math</a></li>
+									<li><a href="http://adiultra.github.io/lynx/tag/web.html">web</a></li>
+							</ul>
+					</li>
+
+					<li>
+
+						<h2>Blog Roll</h2>
+						<ul>
+                            <li><a href="http://getpelican.com/">Pelican</a></li>
+                            <li><a href="http://python.org/">Python.org</a></li>
+                            <li><a href="#">Arcxon Corp</a></li>
+						</ul>
+					</li>
+
+                    <li>
+                            <h2>Social</h2>
+                            <ul>
+
+                                <li><a href="http://adiultra.github.io/lynx/" rel="alternate">Flux Atom</a></li>
+
+
+                                <li><a href="https://twitter.com/adityaultra">Twitter</a></li>
+                                <li><a href="#">Telegram</a></li>
+                            </ul>
+                    </li>
+
+
+				</ul>
 			</div>
-		</div>
+			<div style="clear: both;">&nbsp;</div>
 	</div>
 
 
@@ -179,6 +193,17 @@
 </div>
 
 
-
+<script>renderMathInElement(
+          document.body,
+          {
+              delimiters: [
+                  {left: "$$", right: "$$", display: true},
+                  {left: "\\[", right: "\\]", display: true},
+                  {left: "$", right: "$", display: false},
+                  {left: "\\(", right: "\\)", display: false}
+              ]
+          }
+      );
+</script>
 </body>
 </html>

@@ -1,58 +1,44 @@
+@charset "UTF-8";
 @import url("pygment.css");
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/adiultra\/Projects\/ethereal\/static\/css\/style\.scss}line{font-family:\0000310}}
 body {
-	margin: 30px 0px 0px 0px;
-	padding: 0;
+  margin: 30px 0px 0px 0px;
+  padding: 0;
+  color: #565656;
+  background: #fafafa;
+  font-family: Open Sans, sans-serif;
+  font-size: 14px; }
 
-	color: #373737;
-	background: #fafafa;
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/adiultra\/Projects\/ethereal\/static\/css\/style\.scss}line{font-family:\0000320}}
+.summary h2 {
+  color: black;
+  font-size: 1.6em; }
 
-	font-family: "Open Sans", sans-serif;
-	font-size: 14px;
-}
-.summary h2{color:black;font-size:1.6em; }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/adiultra\/Projects\/ethereal\/static\/css\/style\.scss}line{font-family:\0000321}}
 h1, h2, h3 {
-	margin: 0;
-	padding: 0;
+  margin: 0;
+  padding: 0;
+  color: #2d3844;
+  font-weight: normal; }
 
-	color: #2d3844;
-
-	font-weight: normal;
-}
-
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/adiultra\/Projects\/ethereal\/static\/css\/style\.scss}line{font-family:\0000330}}
 p, ul, ol {
-	margin-top: 0;
+  margin-top: 0;
+  line-height: 180%; }
 
-	line-height: 180%;
-}
-
-ul, ol {
-}
-
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/adiultra\/Projects\/ethereal\/static\/css\/style\.scss}line{font-family:\0000339}}
 a {
-	text-decoration: none;
+  text-decoration: none;
+  color: #61a0ff; }
 
-	color: #61a0ff;
-}
-
-a:hover {
-}
-
-div#lable{
-	position: absolute;
-
-	display: block;
-	float: right;
-
-	text-decoration: none;
-
-	font-family: "Open Sans", sans-serif;
-	font-size: 300%;
-}
-
-#wrapper {
-	margin: 0 auto;
-	padding: 0;
-}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/adiultra\/Projects\/ethereal\/static\/css\/style\.scss}line{font-family:\0000348}}
+div#lable {
+  position: absolute;
+  display: block;
+  float: right;
+  text-decoration: none;
+  font-family: Open Sans, sans-serif;
+  font-size: 300%; }
 
 /*
 ██       ██████   ██████   ██████
@@ -61,52 +47,44 @@ div#lable{
 ██      ██    ██ ██    ██ ██    ██
 ███████  ██████   ██████   ██████
 */
-
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/adiultra\/Projects\/ethereal\/static\/css\/style\.scss}line{font-family:\0000369}}
 #logo {
-	margin: 0;
-	padding: 0;
+  margin: 0;
+  padding: 0;
+  color: #61a0ff; }
 
-	color: #61a0ff;
-}
-
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/adiultra\/Projects\/ethereal\/static\/css\/style\.scss}line{font-family:\0000376}}
 #logo h1, #logo p {
-	margin: 0%;
-	margin-left: -32%;
-	padding: 0;
+  margin: 0%;
+  margin-left: -32%;
+  padding: 0;
+  text-align: center;
+  font-family: Merriweather, Times, serif;
+  font-weight: lighter; }
 
-	text-align: center;
-
-	font-family: "Merriweather", Times, serif;
-	font-weight: lighter;
-}
-
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/adiultra\/Projects\/ethereal\/static\/css\/style\.scss}line{font-family:\0000387}}
 #logo h1 {
-	margin: 0px;
-	padding: 0px;
+  margin: 0px;
+  padding: 0px;
+  color: #61a0ff;
+  font-size: 300%; }
 
-	color: #05b8da;
-
-	font-size: 300%;
-}
-
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/adiultra\/Projects\/ethereal\/static\/css\/style\.scss}line{font-family:\0000396}}
 #logo h1 a {
-	color: #61a0ff;
-}
+  color: #61a0ff; }
 
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/adiultra\/Projects\/ethereal\/static\/css\/style\.scss}line{font-family:\00003100}}
 #logo p {
-	margin: 0px;
-	padding: 0px;
+  margin: 0px;
+  padding: 0px;
+  font-size: 26px; }
 
-	font-size: 26px;
-}
-
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/adiultra\/Projects\/ethereal\/static\/css\/style\.scss}line{font-family:\00003107}}
 #logo a {
-	text-decoration: none;
-
-	color: #61a0ff;
-	border: none;
-	background: none;
-}
+  text-decoration: none;
+  color: #61a0ff;
+  border: none;
+  background: none; }
 
 /*
 ███████ ███████  █████  ██████   ██████ ██   ██
@@ -115,51 +93,43 @@ div#lable{
      ██ ██      ██   ██ ██   ██ ██      ██   ██
 ███████ ███████ ██   ██ ██   ██  ██████ ██   ██
 */
-
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/adiultra\/Projects\/ethereal\/static\/css\/style\.scss}line{font-family:\00003123}}
 #search {
-	width: 280px;
-	height: 50px;
-	padding: 20px 0px 0px 0px;
+  width: 280px;
+  height: 50px;
+  padding: 20px 0px 0px 0px;
+  background: #61a0ff no-repeat left 15px; }
 
-	background: rgb(140, 240, 194) no-repeat left 15px;
-}
-
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/adiultra\/Projects\/ethereal\/static\/css\/style\.scss}line{font-family:\00003131}}
 #search form {
-	margin: 0px 0px 0px 0px;
-	padding: 0px 0px 0px 0px;
-}
+  margin: 0px 0px 0px 0px;
+  padding: 0px 0px 0px 0px; }
 
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/adiultra\/Projects\/ethereal\/static\/css\/style\.scss}line{font-family:\00003136}}
 #search fieldset {
-	margin: 0;
-	padding: 0;
+  margin: 0;
+  padding: 0;
+  border: none; }
 
-	border: none;
-}
-
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/adiultra\/Projects\/ethereal\/static\/css\/style\.scss}line{font-family:\00003143}}
 #search-text {
-	width: 190px;
-	padding: 0px 5px 2px 10px;
+  width: 190px;
+  padding: 0px 5px 2px 10px;
+  text-transform: lowercase;
+  color: #61a0ff;
+  border: none;
+  background: none;
+  font: normal 11px Open Sans, sans-serif; }
 
-	text-transform: lowercase;
-
-	color: #61a0ff;
-	border: none;
-	background: none;
-
-	font: normal 11px "Open Sans", sans-serif;
-}
-
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/adiultra\/Projects\/ethereal\/static\/css\/style\.scss}line{font-family:\00003156}}
 #search-submit {
-	width: 70px;
-	height: 22px;
-
-	text-indent: -99999px;
-
-	color: #61a0ff;
-	border: none;
-	border: none;
-	background: none;
-}
+  width: 70px;
+  height: 22px;
+  text-indent: -9999%;
+  color: #61a0ff;
+  border: none;
+  border: none;
+  background: none; }
 
 /*
 ███    ███ ███████ ███    ██ ██    ██
@@ -168,55 +138,42 @@ div#lable{
 ██  ██  ██ ██      ██  ██ ██ ██    ██
 ██      ██ ███████ ██   ████  ██████
 */
-
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/adiultra\/Projects\/ethereal\/static\/css\/style\.scss}line{font-family:\00003176}}
 #menu {
-	width: 280px;
-	margin: 20px auto 20px auto;
-	padding: 0;
-}
+  width: 280px;
+  margin: 20px auto 20px auto;
+  padding: 0; }
 
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/adiultra\/Projects\/ethereal\/static\/css\/style\.scss}line{font-family:\00003182}}
 #menu ul {
-	margin: 0;
-	padding: 50px 0px 0px 0px;
+  margin: 0%;
+  padding: 50px 0px 0px 0px;
+  list-style: none;
+  line-height: normal; }
 
-	list-style: none;
-
-	line-height: normal;
-}
-
-#menu li {
-
-}
-
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/adiultra\/Projects\/ethereal\/static\/css\/style\.scss}line{font-family:\00003195}}
 #menu a {
-	display: block;
+  display: block;
+  width: 260px;
+  height: 27px;
+  margin: 0.5% 0px;
+  padding: 8px 0px 0px 20px;
+  text-decoration: none;
+  text-transform: capitalize;
+  color: #565656;
+  font-family: Open Sans, sans-serif;
+  font-size: 14px;
+  font-weight: normal; }
 
-	width: 260px;
-	height: 27px;
-	margin: 0.5% 0px;
-	padding: 8px 0px 0px 20px;
-
-	text-decoration: none;
-	text-transform: capitalize;
-
-	color: rgb(33, 33, 33);
-
-	font-family: "Open Sans", sans-serif;
-	font-size: 14px;
-	font-weight: normal;
-}
-
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/adiultra\/Projects\/ethereal\/static\/css\/style\.scss}line{font-family:\00003213}}
 #menu a:hover, #menu .current_page_item a {
-	text-decoration: none;
+  text-decoration: none;
+  color: #40a4e4; }
 
-	color: #40a4e4;
-}
-
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/adiultra\/Projects\/ethereal\/static\/css\/style\.scss}line{font-family:\00003219}}
 #menu .current_page_item a {
-	display: block;
-
-	text-decoration: none;
-}
+  display: block;
+  text-decoration: none; }
 
 /*
 ██████   █████   ██████  ███████
@@ -225,14 +182,33 @@ div#lable{
 ██      ██   ██ ██    ██ ██
 ██      ██   ██  ██████  ███████
 */
-
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/adiultra\/Projects\/ethereal\/static\/css\/style\.scss}line{font-family:\00003233}}
 #page {
-	width: 80%;
-	margin: 0 auto;
+  width: 80%;
+  margin: 0 auto;
+  background: white;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.3); }
 
-	background: rgb(255, 255, 255);
-	box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.3);
-}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/adiultra\/Projects\/ethereal\/static\/css\/style\.scss}line{font-family:\00003241}}
+a.tag-list {
+  margin-right: 1%;
+  padding: 1%;
+  padding-top: 0.5%;
+  padding-bottom: 0.5%;
+  transition: all 0.3s;
+  color: white;
+  border-radius: 2px;
+  background-color: #61a0ff; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/adiultra\/Projects\/ethereal\/static\/css\/style\.scss}line{font-family:\00003254}}
+a.tag-list:hover {
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.2); }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/adiultra\/Projects\/ethereal\/static\/css\/style\.scss}line{font-family:\00003257}}
+a.tag-list:active {
+  color: #61a0ff;
+  border: 1px solid #61a0ff;
+  background-color: white; }
 
 /*
  ██████  ██████  ███    ██ ████████ ███████ ███    ██ ████████
@@ -241,214 +217,231 @@ div#lable{
 ██      ██    ██ ██  ██ ██    ██    ██      ██  ██ ██    ██
  ██████  ██████  ██   ████    ██    ███████ ██   ████    ██
 */
-
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/adiultra\/Projects\/ethereal\/static\/css\/style\.scss}line{font-family:\00003271}}
 #content {
-	float: right;
+  float: right;
+  width: 60%;
+  padding: 8% 11% 0% 0%; }
 
-	width: 60%;
-	padding: 8% 11% 0% 0%;
-}
-
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/adiultra\/Projects\/ethereal\/static\/css\/style\.scss}line{font-family:\00003278}}
 .post {
-	margin-bottom: 10%;
-}
+  margin-bottom: 10%; }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/adiultra\/Projects\/ethereal\/static\/css\/style\.scss}line{font-family:\00003281}}
+  .post hr {
+    border-style: dotted; }
 
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/adiultra\/Projects\/ethereal\/static\/css\/style\.scss}line{font-family:\00003286}}
 .post .title {
-	padding: 0%;
-	padding-bottom: 2%;
-	color: #40a4e4;
+  padding: 0%;
+  padding-bottom: 2%;
+  letter-spacing: -.5px;
+  color: #61a0ff;
+  font-family: Merriweather, Times, serif;
+  font-size: 3.4em;
+  font-weight: lighter; }
 
-	letter-spacing: -.5px;
-
-	font-family: "Merriweather", Times, serif;
-	font-size: 3.4em;
-	font-weight: lighter;
-}
-
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/adiultra\/Projects\/ethereal\/static\/css\/style\.scss}line{font-family:\00003299}}
 .post .title a {
-	color: #40a4e4;
-	border: none;
-}
+  color: #61a0ff;
+  border: none; }
 
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/adiultra\/Projects\/ethereal\/static\/css\/style\.scss}line{font-family:\00003304}}
 .post .meta {
-	margin-bottom: 0px;
-	padding: 0% 0% 0% 0%;
+  margin-bottom: 0px;
+  padding: 0% 0% 0% 0%;
+  text-align: left;
+  font-family: Open Sans, sans-serif;
+  font-size: 14px;
+  font-weight: normal; }
 
-	text-align: left;
-
-	font-family: "Open Sans", sans-serif;
-	font-size: 14px;
-	font-weight: normal;
-}
-
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/adiultra\/Projects\/ethereal\/static\/css\/style\.scss}line{font-family:\00003315}}
 .post .meta .date {
-	float: left;
-}
+  float: left; }
 
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/adiultra\/Projects\/ethereal\/static\/css\/style\.scss}line{font-family:\00003319}}
 .post .meta .posted {
-	float: right;
-}
+  float: right; }
 
-.post .meta a {
-}
-
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/adiultra\/Projects\/ethereal\/static\/css\/style\.scss}line{font-family:\00003326}}
 .post .entry {
-	padding: 0px 0px 20px 0px;
+  padding: 0px 0px 20px 0px;
+  text-align: justify;
+  color: #565656;
+  border-bottom: 4px dotted #565656;
+  font-family: Merriweather, Times, serif;
+  font-size: 1.4em;
+  font-weight: lighter; }
 
-	text-align: justify;
-
-	color:#565656;
-	border-bottom: 1px dotted #565656;
-
-	font-family: "Merriweather", Times, serif;
-	font-size: 1.4em;
-	font-weight: lighter;
-}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/adiultra\/Projects\/ethereal\/static\/css\/style\.scss}line{font-family:\00003338}}
 .post .entry dt {
-    font-weight:bold ;
-}
+  font-weight: bold; }
 
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/adiultra\/Projects\/ethereal\/static\/css\/style\.scss}line{font-family:\00003341}}
+.post .entry a {
+  transition: all 0.3s; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/adiultra\/Projects\/ethereal\/static\/css\/style\.scss}line{font-family:\00003344}}
+.post .entry a:hover {
+  padding: 0.5%;
+  color: white;
+  border-radius: 2px;
+  background-color: #61a0ff;
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.2); }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/adiultra\/Projects\/ethereal\/static\/css\/style\.scss}line{font-family:\00003352}}
+post .entry a:active {
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.3); }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/adiultra\/Projects\/ethereal\/static\/css\/style\.scss}line{font-family:\00003355}}
 .post img {
-	display: block;
+  display: block;
+  margin: 4%;
+  margin-right: auto;
+  margin-left: auto;
+  border: 10px solid white;
+  box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.1); }
 
-    margin:4%;
-	margin-right: auto;
-	margin-left: auto;
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/adiultra\/Projects\/ethereal\/static\/css\/style\.scss}line{font-family:\00003365}}
+.post img:hover {
+  box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.33); }
 
-    border: 10px solid rgb(255, 255, 255);
-	box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.1);
-}
-.post img:hover{
-	box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.33);
-}
-
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/adiultra\/Projects\/ethereal\/static\/css\/style\.scss}line{font-family:\00003369}}
 a.readmore {
-	background-color: rgb(55, 171, 255);
-	color: #fff;
-	padding: 1%;
-	border-radius: 4px;
-	box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.15);
-}
-a.readmore:hover{
-	box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.3);
-}
+  padding: 1%;
+  color: #fff;
+  border-radius: 4px;
+  background-color: #61a0ff;
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.15); }
 
-.summary img{
-    display:none;
-}
-.entry h1{
-	margin-top: 4%;
-	margin-bottom: 4%;
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/adiultra\/Projects\/ethereal\/static\/css\/style\.scss}line{font-family:\00003377}}
+a.readmore:hover {
+  padding: 1% !important;
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.3) !important; }
 
-    color: #1e3037;
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/adiultra\/Projects\/ethereal\/static\/css\/style\.scss}line{font-family:\00003381}}
+a.readmore:active {
+  padding: 1%;
+  box-shadow: 0px 3px 5px rgba(0, 0, 0, 0.5) !important; }
 
-	font-family: "Merriweather", Times, serif;
-	font-size: 2.4em;
-	text-align: center;
-	font-weight: normal;
-}
-.entry h2{
-	margin-top: 3%;
-	margin-bottom: 3%;
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/adiultra\/Projects\/ethereal\/static\/css\/style\.scss}line{font-family:\00003385}}
+.summary img {
+  display: none; }
 
-    color: #2a2f36;
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/adiultra\/Projects\/ethereal\/static\/css\/style\.scss}line{font-family:\00003388}}
+.entry h1 {
+  margin-top: 4%;
+  margin-bottom: 4%;
+  text-align: center;
+  color: #1e3037;
+  font-family: Merriweather, Times, serif;
+  font-size: 2.4em;
+  font-weight: normal; }
 
-	font-family: "Merriweather", Times, serif;
-    font-size: 1.9em;
-	text-align: left;
-	font-weight: normal;
-}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/adiultra\/Projects\/ethereal\/static\/css\/style\.scss}line{font-family:\00003400}}
+.entry h2 {
+  margin-top: 3%;
+  margin-bottom: 3%;
+  text-align: left;
+  color: #2a2f36;
+  font-family: Merriweather, Times, serif;
+  font-size: 1.9em;
+  font-weight: normal; }
 
-.entry h3{
-	margin-top: 3%;
-	margin-bottom: 2%;
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/adiultra\/Projects\/ethereal\/static\/css\/style\.scss}line{font-family:\00003413}}
+.entry h3 {
+  margin-top: 3%;
+  margin-bottom: 2%;
+  text-align: left;
+  color: #2a2f36;
+  font-family: Merriweather, Times, serif;
+  font-size: 1.7em;
+  font-weight: normal; }
 
-    color: #2a2f36;
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/adiultra\/Projects\/ethereal\/static\/css\/style\.scss}line{font-family:\00003425}}
+.entry h4 {
+  margin-top: 2%;
+  margin-bottom: 2%;
+  text-align: left;
+  color: #2a2f36;
+  font-family: Merriweather, Times, serif;
+  font-size: 1.6em;
+  font-weight: normal; }
 
-	font-family: "Merriweather", Times, serif;
-    font-size: 1.7em;
-	text-align: left;
-	font-weight: normal;
-}
-.entry h4{
-	margin-top: 2%;
-	margin-bottom: 2%;
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/adiultra\/Projects\/ethereal\/static\/css\/style\.scss}line{font-family:\00003437}}
+.entry h5 {
+  margin-top: 1%;
+  margin-bottom: 2%;
+  text-align: left;
+  color: #2a2f36;
+  font-family: Merriweather, Times, serif;
+  font-size: 1.5em;
+  font-weight: normal; }
 
-    color: #2a2f36;
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/adiultra\/Projects\/ethereal\/static\/css\/style\.scss}line{font-family:\00003449}}
+.entry h6 {
+  margin-top: 1%;
+  margin-bottom: 2%;
+  text-align: left;
+  color: #2a2f36;
+  font-family: Merriweather, Times, serif;
+  font-size: 1.4em;
+  font-weight: normal; }
 
-	font-family: "Merriweather", Times, serif;
-    font-size: 1.6em;
-	text-align: left;
-	font-weight: normal;
-}
-.entry h5{
-	margin-top: 1%;
-	margin-bottom: 2%;
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/adiultra\/Projects\/ethereal\/static\/css\/style\.scss}line{font-family:\00003461}}
+.entry blockquote {
+  margin: 2%;
+  margin-top: 5%;
+  margin-bottom: 5%;
+  padding: 2%;
+  color: #8e7973;
+  background-color: #fff0e7;
+  box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.1);
+  font-style: italic; }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/adiultra\/Projects\/ethereal\/static\/css\/style\.scss}line{font-family:\00003473}}
+  .entry blockquote p {
+    margin: 0; }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/adiultra\/Projects\/ethereal\/static\/css\/style\.scss}line{font-family:\00003476}}
+  .entry blockquote h1 {
+    text-align: left;
+    font-size: 1.6em; }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/adiultra\/Projects\/ethereal\/static\/css\/style\.scss}line{font-family:\00003481}}
+  .entry blockquote h2 {
+    font-size: 1.5em; }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/adiultra\/Projects\/ethereal\/static\/css\/style\.scss}line{font-family:\00003484}}
+  .entry blockquote h3 {
+    font-size: 1.4em; }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/adiultra\/Projects\/ethereal\/static\/css\/style\.scss}line{font-family:\00003487}}
+  .entry blockquote h4 {
+    font-size: 1.3em; }
 
-	color: #2a2f36;
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/adiultra\/Projects\/ethereal\/static\/css\/style\.scss}line{font-family:\00003491}}
+.entry blockquote:hover {
+  box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.33); }
 
-	font-family: "Merriweather", Times, serif;
-    font-size: 1.5em;
-	text-align: left;
-	font-weight: normal;
-}
-.entry h6{
-	margin-top: 1%;
-	margin-bottom: 2%;
-
-	color: #2a2f36;
-
-	font-family: "Merriweather", Times, serif;
-    font-size: 1.4em;
-	text-align: left;
-	font-weight: normal;
-}
-.entry blockquote{
-	margin: 2%;
-	margin-bottom: 5%;
-	margin-top: 5%;
-	padding: 2%;
-
-	color: rgb(142, 121, 115);
-	background-color: rgb(255, 240, 231);
-	box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.1);
-
-	font-style: italic;
-}
-.entry blockquote > p{
-	margin: 0;
-}
-.entry blockquote:hover{
-	box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.33);
-}
-
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/adiultra\/Projects\/ethereal\/static\/css\/style\.scss}line{font-family:\00003495}}
 h2.title {
-    font-size:2.8em;
-}
+  font-size: 2.8em; }
 
-.highlight{
-    overflow: auto;
-	margin-top: 2%;
-	margin-bottom: 2%;
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/adiultra\/Projects\/ethereal\/static\/css\/style\.scss}line{font-family:\00003499}}
+.highlight {
+  overflow: auto;
+  margin-top: 2%;
+  margin-bottom: 2%;
+  padding-left: 2.4%;
+  border-left: solid 4px #61a0ff;
+  background-color: #fff;
+  box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.1);
+  font-size: 0.8em; }
 
-	padding-left: 2.4%;
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/adiultra\/Projects\/ethereal\/static\/css\/style\.scss}line{font-family:\00003513}}
+.highlight:hover {
+  box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.33); }
 
-	border-left: solid 4px #40a4e4;
-	background-color: #fff;
-	box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.1);
-
-	font-size: 0.8em;
-}
-
-.highlight:hover{
-	box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.33);
-}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/adiultra\/Projects\/ethereal\/static\/css\/style\.scss}line{font-family:\00003516}}
 .links {
-	padding-top: 20px;
-
-	font-size: 12px;
-	font-weight: bold;
-}
+  padding-top: 20px;
+  font-size: 12px;
+  font-weight: bold; }
 
 /*
 ███████ ██ ██████  ███████ ██████   █████  ██████
@@ -457,91 +450,128 @@ h2.title {
      ██ ██ ██   ██ ██      ██   ██ ██   ██ ██   ██
 ███████ ██ ██████  ███████ ██████  ██   ██ ██   ██
 */
-
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/adiultra\/Projects\/ethereal\/static\/css\/style\.scss}line{font-family:\00003531}}
 #sidebar {
-	float: left;
+  float: left;
+  width: 10%;
+  margin: 0px;
+  padding: 4%;
+  text-overflow: clip;
+  color: rgba(120, 120, 120, 0.48);
+  border-right: 4px solid #61a0ff; }
 
-	width: 10%;
-	margin: 0px;
-	padding: 4%;
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/adiultra\/Projects\/ethereal\/static\/css\/style\.scss}line{font-family:\00003543}}
+#sidebar:hover {
+  color: #787878; }
 
-	text-overflow: clip;
-
-	color: rgba(120, 120, 120, 0.48);
-	border-right: 4px solid rgb(119, 172, 222);
-}
-#sidebar:hover{
-	color: rgba(120, 120, 120, 1);
-}
-
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/adiultra\/Projects\/ethereal\/static\/css\/style\.scss}line{font-family:\00003547}}
 #sidebar ul {
-	margin: 0;
-	padding: 0;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  color: rgba(120, 120, 120, 0.48); }
 
-	list-style: none;
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/adiultra\/Projects\/ethereal\/static\/css\/style\.scss}line{font-family:\00003555}}
+#sidebar ul:hover {
+  color: #787878; }
 
-	color: rgba(120, 120, 120, 0.48);
-}
-#sidebar ul:hover{
-	color: rgba(120, 120, 120, 1);
-}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/adiultra\/Projects\/ethereal\/static\/css\/style\.scss}line{font-family:\00003558}}
 #sidebar li {
-	margin: 0;
-	padding: 0;
-}
+  margin: 0;
+  padding: 0; }
 
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/adiultra\/Projects\/ethereal\/static\/css\/style\.scss}line{font-family:\00003563}}
 #sidebar li ul {
-	margin: 0px 0px 0px 20px;
-	padding-bottom: 30px;
-}
+  margin: 0% 0% 0% 2%;
+  padding-bottom: 30px; }
 
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/adiultra\/Projects\/ethereal\/static\/css\/style\.scss}line{font-family:\00003568}}
 #sidebar li li {
-	border-left: none;
+  border-left: none;
+  line-height: 35px; }
 
-	line-height: 35px;
-}
-
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/adiultra\/Projects\/ethereal\/static\/css\/style\.scss}line{font-family:\00003574}}
 #sidebar li li span {
-	display: block;
+  display: block;
+  margin-top: -20px;
+  padding: 0;
+  font-size: 11px;
+  font-style: italic; }
 
-	margin-top: -20px;
-	padding: 0;
-
-	font-size: 11px;
-	font-style: italic;
-}
-
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/adiultra\/Projects\/ethereal\/static\/css\/style\.scss}line{font-family:\00003584}}
 #sidebar li li a {
-	text-decoration: none;
+  text-decoration: none;
+  border-left: 4px solid transparent;
+  padding-left: 4px;
+  color: inherit; }
 
-	color: inherit;
-}
-
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/adiultra\/Projects\/ethereal\/static\/css\/style\.scss}line{font-family:\00003591}}
 #sidebar li li a:hover {
-	color: #40a4e4;
-}
+  color: #61a0ff;
+  border-left: 4px solid #61a0ff; }
 
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/adiultra\/Projects\/ethereal\/static\/css\/style\.scss}line{font-family:\00003595}}
 #sidebar h2 {
-	height: 32px;
+  height: 32px;
+  color: rgba(0, 0, 0, 0.5);
+  font-size: 1.2em; }
 
-	color: rgba(0, 0, 0, 0.5);
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/adiultra\/Projects\/ethereal\/static\/css\/style\.scss}line{font-family:\00003602}}
+#sidebar h2:hover {
+  color: rgba(48, 61, 92, 0.86); }
 
-	font-size: 1.2em;
-}
-#sidebar h2:hover{
-	color: rgba(48, 61, 92, 0.86);
-}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/adiultra\/Projects\/ethereal\/static\/css\/style\.scss}line{font-family:\00003605}}
 #sidebar p {
-	margin: 0 0px;
-	padding: 0px 20px 20px 20px;
-}
+  margin: 0 0px;
+  padding: 0px 20px 20px 20px; }
 
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/adiultra\/Projects\/ethereal\/static\/css\/style\.scss}line{font-family:\00003610}}
 #sidebar a {
-	border: none;
-}
+  color: rgba(0, 0, 0, 0.5);
+  border: none; }
 
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/adiultra\/Projects\/ethereal\/static\/css\/style\.scss}line{font-family:\00003615}}
 #sidebar a:hover {
-}
+  color: #61a0ff; }
+
+/*
+████████  █████   ██████      ██████   █████   ██████  ███████
+   ██    ██   ██ ██           ██   ██ ██   ██ ██       ██
+   ██    ███████ ██   ███     ██████  ███████ ██   ███ █████
+   ██    ██   ██ ██    ██     ██      ██   ██ ██    ██ ██
+   ██    ██   ██  ██████      ██      ██   ██  ██████  ███████
+*/
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/adiultra\/Projects\/ethereal\/static\/css\/style\.scss}line{font-family:\00003627}}
+ul#tag-page {
+  padding-top: 4%;
+  list-style: none;
+  text-decoration: none; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/adiultra\/Projects\/ethereal\/static\/css\/style\.scss}line{font-family:\00003634}}
+#tag-page li {
+  padding-top: 10px;
+  font-size: 22px; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/adiultra\/Projects\/ethereal\/static\/css\/style\.scss}line{font-family:\00003639}}
+#tag-page > li > a {
+  margin-right: 1%;
+  padding: 1%;
+  padding-top: 0.5%;
+  padding-bottom: 0.5%;
+  transition: all 0.3s;
+  color: white;
+  border-radius: 2px;
+  background-color: #61a0ff; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/adiultra\/Projects\/ethereal\/static\/css\/style\.scss}line{font-family:\00003652}}
+#tag-page > li > a:hover {
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.2); }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/adiultra\/Projects\/ethereal\/static\/css\/style\.scss}line{font-family:\00003655}}
+#tag-page > li > a:active {
+  color: #61a0ff;
+  border: 1px solid #61a0ff;
+  background-color: white; }
 
 /*
  ██████  █████  ██      ███████ ███    ██ ██████   █████  ██████
@@ -550,25 +580,21 @@ h2.title {
 ██      ██   ██ ██      ██      ██  ██ ██ ██   ██ ██   ██ ██   ██
  ██████ ██   ██ ███████ ███████ ██   ████ ██████  ██   ██ ██   ██
 */
-
-#calendar {
-}
-
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/adiultra\/Projects\/ethereal\/static\/css\/style\.scss}line{font-family:\00003672}}
 #calendar_wrap {
-	padding: 20px;
-}
+  padding: 20px; }
 
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/adiultra\/Projects\/ethereal\/static\/css\/style\.scss}line{font-family:\00003676}}
 #calendar table {
-	width: 100%;
-}
+  width: 100%; }
 
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/adiultra\/Projects\/ethereal\/static\/css\/style\.scss}line{font-family:\00003680}}
 #calendar tbody td {
-	text-align: center;
-}
+  text-align: center; }
 
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/adiultra\/Projects\/ethereal\/static\/css\/style\.scss}line{font-family:\00003684}}
 #calendar #next {
-	text-align: right;
-}
+  text-align: right; }
 
 /*
  █████  ██████   ██████ ██   ██ ██ ██    ██ ███████
@@ -577,40 +603,35 @@ h2.title {
 ██   ██ ██   ██ ██      ██   ██ ██  ██  ██  ██
 ██   ██ ██   ██  ██████ ██   ██ ██   ████   ███████
 */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/adiultra\/Projects\/ethereal\/static\/css\/style\.scss}line{font-family:\00003696}}
+div#article-section > div {
+  margin: 0px;
+  text-align: center;
+  font-size: 18px; }
 
-div#article-section > div{
-	margin: 0px;
-
-	text-align: center;
-
-	font-size: 18px;
-}
-
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/adiultra\/Projects\/ethereal\/static\/css\/style\.scss}line{font-family:\00003704}}
 dl > h2.Archives-title {
-	padding-bottom: 2%;
+  padding-bottom: 2%;
+  color: #212121;
+  border-bottom: 4px solid #61a0ff;
+  font-size: 3em; }
 
-	color: rgb(33, 33, 33);
-	border-bottom: 4px solid #61a0ff;
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/adiultra\/Projects\/ethereal\/static\/css\/style\.scss}line{font-family:\00003713}}
+div#article-section {
+  margin: 20px 0px;
+  padding: 12px 0px;
+  text-align: center; }
 
-	font-size: 3em;
-}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/adiultra\/Projects\/ethereal\/static\/css\/style\.scss}line{font-family:\00003719}}
+div#article-section:hover {
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.27); }
 
-div#article-section{
-	margin: 20px 0px;
-	padding: 12px 0px;
-
-	text-align: center;
-}
-div#article-section:hover{
-	box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.27);
-}
-div#article-title > a{
-	color: #61a0ff;
-
-	font-family: "Open Sans", sans-serif;
-	font-size: 32px;
-	font-weight: lighter;
-}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/adiultra\/Projects\/ethereal\/static\/css\/style\.scss}line{font-family:\00003722}}
+div#article-title > a {
+  color: #61a0ff;
+  font-family: Open Sans, sans-serif;
+  font-size: 32px;
+  font-weight: lighter; }
 
 /*
 ███████  ██████   ██████  ████████ ███████ ██████
@@ -619,27 +640,22 @@ div#article-title > a{
 ██      ██    ██ ██    ██    ██    ██      ██   ██
 ██       ██████   ██████     ██    ███████ ██   ██
 */
-
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/adiultra\/Projects\/ethereal\/static\/css\/style\.scss}line{font-family:\00003738}}
 #footer {
-	text-align: center;
+  text-align: center;
+  font-family: Open Sans, sans-serif; }
 
-	font-family: "Open Sans", sans-serif;
-}
-
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/adiultra\/Projects\/ethereal\/static\/css\/style\.scss}line{font-family:\00003744}}
 #footer p {
-	margin: 0%;
-	padding-top: 1.5%;
-	padding-bottom: 1.5%;
+  margin: 0%;
+  padding-top: 1.5%;
+  padding-bottom: 1.5%;
+  text-align: center;
+  text-transform: uppercase;
+  color: #4b5570;
+  font-size: 0.8em;
+  line-height: normal; }
 
-	text-align: center;
-	text-transform: uppercase;
-
-	color: #4b5570;
-
-	font-size: 0.8em;
-	line-height: normal;
-}
-
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/adiultra\/Projects\/ethereal\/static\/css\/style\.scss}line{font-family:\00003758}}
 #footer a {
-	color: #333746;
-}
+  color: #333746; }
