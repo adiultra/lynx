@@ -23,6 +23,14 @@ $h1-color: rgb(67, 70, 73);
 $h-color: rgb(79, 83, 87);
 $brown: rgb(142, 121, 115);
 $cream: rgb(255, 240, 231);
+$light: rgb(250, 250, 250);
+
+
+// Media Queries
+
+$mobile: "(orientation: portrait)";
+$tab: "(orientation: landscape) and (max-width: 1200px)";
+
 
 /*
 ██████   █████  ███████ ██  ██████
@@ -76,6 +84,79 @@ div#lable{
 	font-size: 300%;
 }
 
+/*
+██   ██ ███████  █████  ██████  ███████ ██████
+██   ██ ██      ██   ██ ██   ██ ██      ██   ██
+███████ █████   ███████ ██   ██ █████   ██████
+██   ██ ██      ██   ██ ██   ██ ██      ██   ██
+██   ██ ███████ ██   ██ ██████  ███████ ██   ██
+*/
+
+#mobile-header{
+    display: none;
+    #m-logo{
+        background: $main-color;
+        text-align: center;
+        color: $light;
+        font-family: $serif-fonts;
+		font-weight: lighter;
+        a, h1{
+            font-weight: lighter;
+            font-size: 2em;
+            color: $light;
+        }
+        p{
+            padding: 0;
+            font-size: 1.2em;
+            margin: 0;
+        }
+    }
+    #m-menu{
+        position: sticky;
+        top: 0;
+
+        padding: 1%;
+
+        background-color: fade-out($light, 0.05);
+        box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.3);
+
+        ul{
+            margin: 0;
+
+            list-style: none;
+
+            text-align: center;
+            padding: 2% 0;
+
+            li{
+                display: inline;
+
+                margin-right: 1%;
+                margin-left: 1%;
+                padding: 0;
+
+                a{
+                    text-decoration: none;
+
+                    padding: 1%;
+
+                    color: #444;
+
+                    transition: 0.2s;
+                    font-size: 20px;
+                    &:hover{
+                        color: $main-color;
+                        background-color: rgba(0, 0, 0, 0.05);
+                    }
+                    &:active{
+                        background-color: rgba(0, 0, 0, 0.1);
+                    }
+                }
+            }
+        }
+
+    }
+}
 
 /*
 ███████ ██ ██████  ███████ ██████   █████  ██████
@@ -690,4 +771,51 @@ div#article-title > a{
 	a {
 		color: #333746;
 	}
+}
+
+/*
+██████  ███████ ███████ ██████   ██████  ███    ██ ███████ ██ ██    ██ ███████
+██   ██ ██      ██      ██   ██ ██    ██ ████   ██ ██      ██ ██    ██ ██
+██████  █████   ███████ ██████  ██    ██ ██ ██  ██ ███████ ██ ██    ██ █████
+██   ██ ██           ██ ██      ██    ██ ██  ██ ██      ██ ██  ██  ██  ██
+██   ██ ███████ ███████ ██       ██████  ██   ████ ███████ ██   ████   ███████
+*/
+
+
+@media #{ $mobile }{
+    body{
+        margin: 0;
+        font-size: 12px;
+    }
+    #sidebar{
+        display: none;
+    }
+    #mobile-header{
+        display: initial;
+    }
+    #page{
+        width: auto;
+    }
+    #content{
+        float: none;
+        width: auto;
+        padding: 8% 2%;
+    }
+    .entry{
+		font-size: 1em;
+    }
+}
+
+@media #{ $tab }{
+    #page{
+        width: auto;
+    }
+    #sidebar{
+        width: 15%;
+        padding: 2%;
+    }
+    #content{
+        width: 70%;
+        padding: 10% 5%;
+    }
 }

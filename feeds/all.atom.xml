@@ -1,0 +1,244 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom"><title>Lynx</title><link href="http://adiultra.github.io/lynx/" rel="alternate"></link><link href="http://adiultra.github.io/lynx/feeds/all.atom.xml" rel="self"></link><id>http://adiultra.github.io/lynx/</id><updated>2016-02-06T13:20:00+05:30</updated><entry><title>Setting Up Pelican</title><link href="http://adiultra.github.io/lynx/setting-up-pelican.html" rel="alternate"></link><updated>2016-02-06T13:20:00+05:30</updated><author><name>Adi Ultra</name></author><id>tag:adiultra.github.io,2016-02-06:lynx/setting-up-pelican.html</id><summary type="html">&lt;h1&gt;How to setup Pelican&lt;/h1&gt;
+&lt;p&gt;This a the setup of pelican, the static blog creator, which converts markdown to static html pages.&lt;/p&gt;
+&lt;p&gt;First off, Pelican is a command line tool, But don't scream, its perfectly sane and doesn't require your ninja skills to do cool stuff.&lt;/p&gt;
+&lt;h2&gt;1. Installing Pelican&lt;/h2&gt;
+&lt;p&gt;You can follow the official &lt;a href=""&gt;guide&lt;/a&gt; to setup Pelican. Here I Show the steps to install it for linux.&lt;/p&gt;
+&lt;p&gt;Pelican can be easily installed if you have Python Installed, since python comes with pip (The package manager for python).&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;sudo -H pip install Markdown
+sudo -H pip install pelican
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;blockquote&gt;
+&lt;p&gt;The 1st line installs markdown package for conversion from MD to HTML.&lt;/p&gt;
+&lt;p&gt;Here &lt;code&gt;sudo -H&lt;/code&gt; installs pelican (and Markdown) for all users, remove this to install for only the current user, that is you.&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;Now, when pelican is installed. We can move on to create the very first blog.&lt;/p&gt;
+&lt;h2&gt;2. Pelican Quick Start&lt;/h2&gt;
+&lt;p&gt;As the header says, let's run the &lt;code&gt;pelican-quickstart&lt;/code&gt; Command.&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;Replace path/to/yoursite with the path of the folder where you want pelican to reside&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;mkdir -p ~/path/to/yoursite
+&lt;span class="c"&gt;#optional if you already created a folder with your file manager&lt;/span&gt;
+
+&lt;span class="nb"&gt;cd&lt;/span&gt; ~/path/to/yoursite
+&lt;span class="c"&gt;# this changes the directory to your folder&lt;/span&gt;
+
+pelican-quickstart
+&lt;span class="c"&gt;# answer the questions asked and you get your site ready&lt;/span&gt;
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;p&gt;Here is a sample setup :&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;adiultra@adiultra:~&lt;span class="nv"&gt;$ &lt;/span&gt;mkdir -p ~/Projects/pelicus
+adiultra@adiultra:~&lt;span class="nv"&gt;$ &lt;/span&gt;&lt;span class="nb"&gt;cd&lt;/span&gt; ~/Projects/pelicus
+adiultra@adiultra:~/Projects/pelicus&lt;span class="nv"&gt;$ &lt;/span&gt;pelican-quickstart
+Welcome to pelican-quickstart v3.6.3.
+
+This script will &lt;span class="nb"&gt;help &lt;/span&gt;you create a new Pelican-based website.
+
+Please answer the following questions so this script can generate the files
+needed by Pelican.
+
+
+&amp;gt; Where &lt;span class="k"&gt;do&lt;/span&gt; you want to create your new web site? &lt;span class="o"&gt;[&lt;/span&gt;.&lt;span class="o"&gt;]&lt;/span&gt;
+&amp;gt; What will be the title of this web site? Pelicus
+&amp;gt; Who will be the author of this web site? Aditya Cool
+&amp;gt; What will be the default language of this web site? &lt;span class="o"&gt;[&lt;/span&gt;en&lt;span class="o"&gt;]&lt;/span&gt;
+&amp;gt; Do you want to specify a URL prefix? e.g., http://example.com   &lt;span class="o"&gt;(&lt;/span&gt;Y/n&lt;span class="o"&gt;)&lt;/span&gt; n
+&amp;gt; Do you want to &lt;span class="nb"&gt;enable &lt;/span&gt;article pagination? &lt;span class="o"&gt;(&lt;/span&gt;Y/n&lt;span class="o"&gt;)&lt;/span&gt; Y
+&amp;gt; How many articles per page &lt;span class="k"&gt;do&lt;/span&gt; you want? &lt;span class="o"&gt;[&lt;/span&gt;10&lt;span class="o"&gt;]&lt;/span&gt;
+&amp;gt; What is your &lt;span class="nb"&gt;time &lt;/span&gt;zone? &lt;span class="o"&gt;[&lt;/span&gt;Europe/Paris&lt;span class="o"&gt;]&lt;/span&gt;    Asia/Calcutta
+&amp;gt; Do you want to generate a Fabfile/Makefile to automate generation and publishing? &lt;span class="o"&gt;(&lt;/span&gt;Y/n&lt;span class="o"&gt;)&lt;/span&gt; Y
+&amp;gt; Do you want an auto-reload &lt;span class="p"&gt;&amp;amp;&lt;/span&gt; simpleHTTP script to assist with theme and site development? &lt;span class="o"&gt;(&lt;/span&gt;Y/n&lt;span class="o"&gt;)&lt;/span&gt; Y
+&amp;gt; Do you want to upload your website using FTP? &lt;span class="o"&gt;(&lt;/span&gt;y/N&lt;span class="o"&gt;)&lt;/span&gt; N
+&amp;gt; Do you want to upload your website using SSH? &lt;span class="o"&gt;(&lt;/span&gt;y/N&lt;span class="o"&gt;)&lt;/span&gt; N
+&amp;gt; Do you want to upload your website using Dropbox? &lt;span class="o"&gt;(&lt;/span&gt;y/N&lt;span class="o"&gt;)&lt;/span&gt; N
+&amp;gt; Do you want to upload your website using S3? &lt;span class="o"&gt;(&lt;/span&gt;y/N&lt;span class="o"&gt;)&lt;/span&gt; N
+&amp;gt; Do you want to upload your website using Rackspace Cloud Files? &lt;span class="o"&gt;(&lt;/span&gt;y/N&lt;span class="o"&gt;)&lt;/span&gt; N
+&amp;gt; Do you want to upload your website using GitHub Pages? &lt;span class="o"&gt;(&lt;/span&gt;y/N&lt;span class="o"&gt;)&lt;/span&gt; y
+&amp;gt; Is this your personal page &lt;span class="o"&gt;(&lt;/span&gt;username.github.io&lt;span class="o"&gt;)&lt;/span&gt;? &lt;span class="o"&gt;(&lt;/span&gt;y/N&lt;span class="o"&gt;)&lt;/span&gt; N
+Done. Your new project is available at /home/adiultra/Projects/pelicus
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;p&gt;Wow you have your Blog ready, but wait how do you add content? Read ON.&lt;/p&gt;
+&lt;h2&gt;3. Writing Articles&lt;/h2&gt;
+&lt;p&gt;In your blog there will be A folder named &lt;code&gt;content&lt;/code&gt;. Since you created a new blog, It's empty, Don't worry. You will fill it very soon.&lt;/p&gt;
+&lt;p&gt;In this folder create a file named whatever you like (My-first-article.md is a great name) (Remember to add &lt;code&gt;.md&lt;/code&gt; to your filename since this tells it that it is markdown).&lt;/p&gt;
+&lt;p&gt;Open it in your favorite text editor, I recommend &lt;a href="http://atom.io"&gt;Atom&lt;/a&gt; for this job since it has excellent markdown support with live preview.&lt;/p&gt;
+&lt;p&gt;Add the following content to your file :&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span class="n"&gt;Title&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt; &lt;span class="n"&gt;MarkDown&lt;/span&gt; &lt;span class="n"&gt;Exhibit&lt;/span&gt;
+&lt;span class="n"&gt;Date&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt; &lt;span class="mi"&gt;2015&lt;/span&gt;&lt;span class="o"&gt;-&lt;/span&gt;&lt;span class="mi"&gt;12&lt;/span&gt;&lt;span class="o"&gt;-&lt;/span&gt;&lt;span class="mi"&gt;06&lt;/span&gt; &lt;span class="mi"&gt;13&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt;&lt;span class="mi"&gt;20&lt;/span&gt;
+&lt;span class="n"&gt;Category&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt; &lt;span class="n"&gt;Markus&lt;/span&gt;
+&lt;span class="n"&gt;Tags&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt; &lt;span class="n"&gt;blog&lt;/span&gt;&lt;span class="o"&gt;,&lt;/span&gt; &lt;span class="n"&gt;pelican&lt;/span&gt;
+
+&lt;span class="err"&gt;#&lt;/span&gt; &lt;span class="n"&gt;An&lt;/span&gt; &lt;span class="n"&gt;exhibit&lt;/span&gt; &lt;span class="n"&gt;of&lt;/span&gt; &lt;span class="n"&gt;Markdown&lt;/span&gt;
+
+&lt;span class="n"&gt;This&lt;/span&gt; &lt;span class="n"&gt;note&lt;/span&gt; &lt;span class="n"&gt;demonstrates&lt;/span&gt; &lt;span class="n"&gt;some&lt;/span&gt; &lt;span class="n"&gt;of&lt;/span&gt; &lt;span class="n"&gt;what&lt;/span&gt; &lt;span class="o"&gt;[&lt;/span&gt;&lt;span class="n"&gt;Markdown&lt;/span&gt;&lt;span class="o"&gt;][&lt;/span&gt;&lt;span class="mi"&gt;1&lt;/span&gt;&lt;span class="o"&gt;]&lt;/span&gt; &lt;span class="k"&gt;is&lt;/span&gt; &lt;span class="n"&gt;capable&lt;/span&gt; &lt;span class="n"&gt;of&lt;/span&gt; &lt;span class="n"&gt;doing&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;
+
+&lt;span class="err"&gt;##&lt;/span&gt; &lt;span class="n"&gt;Basic&lt;/span&gt; &lt;span class="n"&gt;formatting&lt;/span&gt;
+
+&lt;span class="n"&gt;Paragraphs&lt;/span&gt; &lt;span class="n"&gt;can&lt;/span&gt; &lt;span class="n"&gt;be&lt;/span&gt; &lt;span class="n"&gt;written&lt;/span&gt; &lt;span class="n"&gt;like&lt;/span&gt; &lt;span class="n"&gt;so&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt; &lt;span class="n"&gt;A&lt;/span&gt; &lt;span class="n"&gt;paragraph&lt;/span&gt; &lt;span class="k"&gt;is&lt;/span&gt; &lt;span class="n"&gt;the&lt;/span&gt; &lt;span class="n"&gt;basic&lt;/span&gt; &lt;span class="n"&gt;block&lt;/span&gt; &lt;span class="n"&gt;of&lt;/span&gt; &lt;span class="n"&gt;Markdown&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt; &lt;span class="n"&gt;A&lt;/span&gt; &lt;span class="n"&gt;paragraph&lt;/span&gt; &lt;span class="k"&gt;is&lt;/span&gt; &lt;span class="n"&gt;what&lt;/span&gt; &lt;span class="n"&gt;text&lt;/span&gt; &lt;span class="n"&gt;will&lt;/span&gt; &lt;span class="n"&gt;turn&lt;/span&gt; &lt;span class="n"&gt;into&lt;/span&gt; &lt;span class="n"&gt;when&lt;/span&gt; &lt;span class="n"&gt;there&lt;/span&gt; &lt;span class="k"&gt;is&lt;/span&gt; &lt;span class="n"&gt;no&lt;/span&gt; &lt;span class="n"&gt;reason&lt;/span&gt; &lt;span class="n"&gt;it&lt;/span&gt; &lt;span class="n"&gt;should&lt;/span&gt; &lt;span class="n"&gt;become&lt;/span&gt; &lt;span class="n"&gt;anything&lt;/span&gt; &lt;span class="k"&gt;else&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;
+
+&lt;span class="n"&gt;Paragraphs&lt;/span&gt; &lt;span class="n"&gt;must&lt;/span&gt; &lt;span class="n"&gt;be&lt;/span&gt; &lt;span class="n"&gt;separated&lt;/span&gt; &lt;span class="n"&gt;by&lt;/span&gt; &lt;span class="n"&gt;a&lt;/span&gt; &lt;span class="n"&gt;blank&lt;/span&gt; &lt;span class="n"&gt;line&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt; &lt;span class="n"&gt;Basic&lt;/span&gt; &lt;span class="n"&gt;formatting&lt;/span&gt; &lt;span class="n"&gt;of&lt;/span&gt; &lt;span class="o"&gt;*&lt;/span&gt;&lt;span class="n"&gt;italics&lt;/span&gt;&lt;span class="o"&gt;*&lt;/span&gt; &lt;span class="n"&gt;and&lt;/span&gt; &lt;span class="o"&gt;**&lt;/span&gt;&lt;span class="n"&gt;bold&lt;/span&gt;&lt;span class="o"&gt;**&lt;/span&gt; &lt;span class="k"&gt;is&lt;/span&gt; &lt;span class="n"&gt;supported&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt; &lt;span class="n"&gt;This&lt;/span&gt; &lt;span class="o"&gt;*&lt;/span&gt;&lt;span class="n"&gt;can&lt;/span&gt; &lt;span class="n"&gt;be&lt;/span&gt; &lt;span class="o"&gt;**&lt;/span&gt;&lt;span class="n"&gt;nested&lt;/span&gt;&lt;span class="o"&gt;**&lt;/span&gt; &lt;span class="n"&gt;like&lt;/span&gt;&lt;span class="o"&gt;*&lt;/span&gt; &lt;span class="n"&gt;so&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;
+
+&lt;span class="err"&gt;##&lt;/span&gt; &lt;span class="n"&gt;Lists&lt;/span&gt;
+
+&lt;span class="err"&gt;###&lt;/span&gt; &lt;span class="n"&gt;Ordered&lt;/span&gt; &lt;span class="n"&gt;list&lt;/span&gt;
+
+&lt;span class="mi"&gt;1&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt; &lt;span class="n"&gt;Item&lt;/span&gt; &lt;span class="mi"&gt;1&lt;/span&gt;
+&lt;span class="mi"&gt;2&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt; &lt;span class="n"&gt;A&lt;/span&gt; &lt;span class="n"&gt;second&lt;/span&gt; &lt;span class="n"&gt;item&lt;/span&gt;
+&lt;span class="mi"&gt;3&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt; &lt;span class="n"&gt;Number&lt;/span&gt; &lt;span class="mi"&gt;3&lt;/span&gt;
+&lt;span class="mi"&gt;4&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt; &lt;span class="err"&gt;Ⅳ&lt;/span&gt;
+
+&lt;span class="o"&gt;*&lt;/span&gt;&lt;span class="n"&gt;Note&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt; &lt;span class="n"&gt;the&lt;/span&gt; &lt;span class="n"&gt;fourth&lt;/span&gt; &lt;span class="n"&gt;item&lt;/span&gt; &lt;span class="n"&gt;uses&lt;/span&gt; &lt;span class="n"&gt;the&lt;/span&gt; &lt;span class="n"&gt;Unicode&lt;/span&gt; &lt;span class="n"&gt;character&lt;/span&gt; &lt;span class="k"&gt;for&lt;/span&gt; &lt;span class="o"&gt;[&lt;/span&gt;&lt;span class="n"&gt;Roman&lt;/span&gt; &lt;span class="n"&gt;numeral&lt;/span&gt; &lt;span class="n"&gt;four&lt;/span&gt;&lt;span class="o"&gt;][&lt;/span&gt;&lt;span class="mi"&gt;2&lt;/span&gt;&lt;span class="o"&gt;].*&lt;/span&gt;
+
+&lt;span class="err"&gt;###&lt;/span&gt; &lt;span class="n"&gt;Unordered&lt;/span&gt; &lt;span class="n"&gt;list&lt;/span&gt;
+
+&lt;span class="o"&gt;*&lt;/span&gt; &lt;span class="n"&gt;An&lt;/span&gt; &lt;span class="n"&gt;item&lt;/span&gt;
+&lt;span class="o"&gt;*&lt;/span&gt; &lt;span class="n"&gt;Another&lt;/span&gt; &lt;span class="n"&gt;item&lt;/span&gt;
+&lt;span class="o"&gt;*&lt;/span&gt; &lt;span class="n"&gt;Yet&lt;/span&gt; &lt;span class="n"&gt;another&lt;/span&gt; &lt;span class="n"&gt;item&lt;/span&gt;
+&lt;span class="o"&gt;*&lt;/span&gt; &lt;span class="n"&gt;And&lt;/span&gt; &lt;span class="n"&gt;there&lt;/span&gt;&lt;span class="s1"&gt;&amp;#39;s more...&lt;/span&gt;
+
+&lt;span class="s1"&gt;## Paragraph modifiers&lt;/span&gt;
+
+&lt;span class="s1"&gt;### Code block&lt;/span&gt;
+
+&lt;span class="s1"&gt;    Code blocks are very useful for developers and other people who look at code or other things that are written in plain text. As you can see, it uses a fixed-width font.&lt;/span&gt;
+
+&lt;span class="s1"&gt;You can also make `inline code` to add code into other things.&lt;/span&gt;
+
+&lt;span class="s1"&gt;### Quote&lt;/span&gt;
+
+&lt;span class="s1"&gt;&amp;gt; Here is a quote. What this is should be self explanatory. Quotes are automatically indented when they are used.&lt;/span&gt;
+
+&lt;span class="s1"&gt;## Headings&lt;/span&gt;
+
+&lt;span class="s1"&gt;There are six levels of headings. They correspond with the six levels of HTML headings. You&amp;#39;&lt;/span&gt;&lt;span class="n"&gt;ve&lt;/span&gt; &lt;span class="n"&gt;probably&lt;/span&gt; &lt;span class="n"&gt;noticed&lt;/span&gt; &lt;span class="n"&gt;them&lt;/span&gt; &lt;span class="n"&gt;already&lt;/span&gt; &lt;span class="k"&gt;in&lt;/span&gt; &lt;span class="n"&gt;the&lt;/span&gt; &lt;span class="n"&gt;page&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt; &lt;span class="n"&gt;Each&lt;/span&gt; &lt;span class="n"&gt;level&lt;/span&gt; &lt;span class="n"&gt;down&lt;/span&gt; &lt;span class="n"&gt;uses&lt;/span&gt; &lt;span class="n"&gt;one&lt;/span&gt; &lt;span class="n"&gt;more&lt;/span&gt; &lt;span class="n"&gt;hash&lt;/span&gt; &lt;span class="n"&gt;character&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;
+
+&lt;span class="err"&gt;###&lt;/span&gt; &lt;span class="n"&gt;Headings&lt;/span&gt; &lt;span class="o"&gt;*&lt;/span&gt;&lt;span class="n"&gt;can&lt;/span&gt;&lt;span class="o"&gt;*&lt;/span&gt; &lt;span class="n"&gt;also&lt;/span&gt; &lt;span class="n"&gt;contain&lt;/span&gt; &lt;span class="o"&gt;**&lt;/span&gt;&lt;span class="n"&gt;formatting&lt;/span&gt;&lt;span class="o"&gt;**&lt;/span&gt;
+
+&lt;span class="err"&gt;###&lt;/span&gt; &lt;span class="n"&gt;They&lt;/span&gt; &lt;span class="n"&gt;can&lt;/span&gt; &lt;span class="n"&gt;even&lt;/span&gt; &lt;span class="n"&gt;contain&lt;/span&gt; &lt;span class="err"&gt;`&lt;/span&gt;&lt;span class="n"&gt;inline&lt;/span&gt; &lt;span class="n"&gt;code&lt;/span&gt;&lt;span class="err"&gt;`&lt;/span&gt;
+
+&lt;span class="n"&gt;Of&lt;/span&gt; &lt;span class="n"&gt;course&lt;/span&gt;&lt;span class="o"&gt;,&lt;/span&gt; &lt;span class="n"&gt;demonstrating&lt;/span&gt; &lt;span class="n"&gt;what&lt;/span&gt; &lt;span class="n"&gt;headings&lt;/span&gt; &lt;span class="n"&gt;look&lt;/span&gt; &lt;span class="n"&gt;like&lt;/span&gt; &lt;span class="n"&gt;messes&lt;/span&gt; &lt;span class="n"&gt;up&lt;/span&gt; &lt;span class="n"&gt;the&lt;/span&gt; &lt;span class="n"&gt;structure&lt;/span&gt; &lt;span class="n"&gt;of&lt;/span&gt; &lt;span class="n"&gt;the&lt;/span&gt; &lt;span class="n"&gt;page&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;
+
+&lt;span class="n"&gt;I&lt;/span&gt; &lt;span class="n"&gt;don&lt;/span&gt;&lt;span class="s1"&gt;&amp;#39;t recommend using more than three or four levels of headings here, because, when you&amp;#39;&lt;/span&gt;&lt;span class="n"&gt;re&lt;/span&gt; &lt;span class="n"&gt;smallest&lt;/span&gt; &lt;span class="n"&gt;heading&lt;/span&gt; &lt;span class="n"&gt;isn&lt;/span&gt;&lt;span class="s1"&gt;&amp;#39;t too small, and you&amp;#39;&lt;/span&gt;&lt;span class="n"&gt;re&lt;/span&gt; &lt;span class="n"&gt;largest&lt;/span&gt; &lt;span class="n"&gt;heading&lt;/span&gt; &lt;span class="n"&gt;isn&lt;/span&gt;&lt;span class="s1"&gt;&amp;#39;t too big, and you want each size up to look noticeably larger and more important, there there are only so many sizes that you can use.&lt;/span&gt;
+
+&lt;span class="s1"&gt;## URLs&lt;/span&gt;
+
+&lt;span class="s1"&gt;URLs can be made in a handful of ways:&lt;/span&gt;
+
+&lt;span class="s1"&gt;* A named link to [MarkItDown][3]. The easiest way to do these is to select what you want to make a link and hit `Ctrl+L`.&lt;/span&gt;
+&lt;span class="s1"&gt;* Another named link to [MarkItDown](http://www.markitdown.net/)&lt;/span&gt;
+&lt;span class="s1"&gt;* Sometimes you just want a URL like &amp;lt;http://www.markitdown.net/&amp;gt;.&lt;/span&gt;
+
+&lt;span class="s1"&gt;## Horizontal rule&lt;/span&gt;
+
+&lt;span class="s1"&gt;A horizontal rule is a line that goes across the middle of the page.&lt;/span&gt;
+
+&lt;span class="s1"&gt;---&lt;/span&gt;
+
+&lt;span class="s1"&gt;It&amp;#39;&lt;/span&gt;&lt;span class="n"&gt;s&lt;/span&gt; &lt;span class="n"&gt;sometimes&lt;/span&gt; &lt;span class="n"&gt;handy&lt;/span&gt; &lt;span class="k"&gt;for&lt;/span&gt; &lt;span class="n"&gt;breaking&lt;/span&gt; &lt;span class="n"&gt;things&lt;/span&gt; &lt;span class="n"&gt;up&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;
+
+&lt;span class="err"&gt;##&lt;/span&gt; &lt;span class="n"&gt;Images&lt;/span&gt;
+
+&lt;span class="n"&gt;Markdown&lt;/span&gt; &lt;span class="n"&gt;can&lt;/span&gt; &lt;span class="n"&gt;also&lt;/span&gt; &lt;span class="n"&gt;contain&lt;/span&gt; &lt;span class="n"&gt;images&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt; &lt;span class="n"&gt;I&lt;/span&gt;&lt;span class="s1"&gt;&amp;#39;ll need to add something here sometime.&lt;/span&gt;
+
+&lt;span class="s1"&gt;## Finally&lt;/span&gt;
+
+&lt;span class="s1"&gt;There&amp;#39;&lt;/span&gt;&lt;span class="n"&gt;s&lt;/span&gt; &lt;span class="n"&gt;actually&lt;/span&gt; &lt;span class="n"&gt;a&lt;/span&gt; &lt;span class="n"&gt;lot&lt;/span&gt; &lt;span class="n"&gt;more&lt;/span&gt; &lt;span class="n"&gt;to&lt;/span&gt; &lt;span class="n"&gt;Markdown&lt;/span&gt; &lt;span class="n"&gt;than&lt;/span&gt; &lt;span class="k"&gt;this&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt; &lt;span class="n"&gt;See&lt;/span&gt; &lt;span class="n"&gt;the&lt;/span&gt; &lt;span class="n"&gt;official&lt;/span&gt; &lt;span class="o"&gt;[&lt;/span&gt;&lt;span class="n"&gt;introduction&lt;/span&gt;&lt;span class="o"&gt;][&lt;/span&gt;&lt;span class="mi"&gt;4&lt;/span&gt;&lt;span class="o"&gt;]&lt;/span&gt; &lt;span class="n"&gt;and&lt;/span&gt; &lt;span class="o"&gt;[&lt;/span&gt;&lt;span class="n"&gt;syntax&lt;/span&gt;&lt;span class="o"&gt;][&lt;/span&gt;&lt;span class="mi"&gt;5&lt;/span&gt;&lt;span class="o"&gt;]&lt;/span&gt; &lt;span class="k"&gt;for&lt;/span&gt; &lt;span class="n"&gt;more&lt;/span&gt; &lt;span class="n"&gt;information&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt; &lt;span class="n"&gt;However&lt;/span&gt;&lt;span class="o"&gt;,&lt;/span&gt; &lt;span class="n"&gt;be&lt;/span&gt; &lt;span class="n"&gt;aware&lt;/span&gt; &lt;span class="n"&gt;that&lt;/span&gt; &lt;span class="k"&gt;this&lt;/span&gt; &lt;span class="k"&gt;is&lt;/span&gt; &lt;span class="n"&gt;not&lt;/span&gt; &lt;span class="n"&gt;using&lt;/span&gt; &lt;span class="n"&gt;the&lt;/span&gt; &lt;span class="n"&gt;official&lt;/span&gt; &lt;span class="n"&gt;implementation&lt;/span&gt;&lt;span class="o"&gt;,&lt;/span&gt; &lt;span class="n"&gt;and&lt;/span&gt; &lt;span class="k"&gt;this&lt;/span&gt; &lt;span class="n"&gt;might&lt;/span&gt; &lt;span class="n"&gt;work&lt;/span&gt; &lt;span class="n"&gt;subtly&lt;/span&gt; &lt;span class="n"&gt;differently&lt;/span&gt; &lt;span class="k"&gt;in&lt;/span&gt; &lt;span class="n"&gt;some&lt;/span&gt; &lt;span class="n"&gt;of&lt;/span&gt; &lt;span class="n"&gt;the&lt;/span&gt; &lt;span class="n"&gt;little&lt;/span&gt; &lt;span class="n"&gt;things&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;
+
+
+  &lt;span class="o"&gt;[&lt;/span&gt;&lt;span class="mi"&gt;1&lt;/span&gt;&lt;span class="o"&gt;]:&lt;/span&gt; &lt;span class="n"&gt;http&lt;/span&gt;&lt;span class="o"&gt;://&lt;/span&gt;&lt;span class="n"&gt;daringfireball&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="na"&gt;net&lt;/span&gt;&lt;span class="sr"&gt;/projects/markdown/&lt;/span&gt;
+  &lt;span class="o"&gt;[&lt;/span&gt;&lt;span class="mi"&gt;2&lt;/span&gt;&lt;span class="o"&gt;]:&lt;/span&gt; &lt;span class="n"&gt;http&lt;/span&gt;&lt;span class="o"&gt;://&lt;/span&gt;&lt;span class="n"&gt;www&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="na"&gt;fileformat&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="na"&gt;info&lt;/span&gt;&lt;span class="sr"&gt;/info/unicode/char/2163/i&lt;/span&gt;&lt;span class="n"&gt;ndex&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="na"&gt;htm&lt;/span&gt;
+  &lt;span class="o"&gt;[&lt;/span&gt;&lt;span class="mi"&gt;3&lt;/span&gt;&lt;span class="o"&gt;]:&lt;/span&gt; &lt;span class="n"&gt;http&lt;/span&gt;&lt;span class="o"&gt;://&lt;/span&gt;&lt;span class="n"&gt;www&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="na"&gt;markitdown&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="na"&gt;net&lt;/span&gt;&lt;span class="o"&gt;/&lt;/span&gt;
+  &lt;span class="o"&gt;[&lt;/span&gt;&lt;span class="mi"&gt;4&lt;/span&gt;&lt;span class="o"&gt;]:&lt;/span&gt; &lt;span class="n"&gt;http&lt;/span&gt;&lt;span class="o"&gt;://&lt;/span&gt;&lt;span class="n"&gt;daringfireball&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="na"&gt;net&lt;/span&gt;&lt;span class="sr"&gt;/projects/markdown/&lt;/span&gt;&lt;span class="n"&gt;basics&lt;/span&gt;
+  &lt;span class="o"&gt;[&lt;/span&gt;&lt;span class="mi"&gt;5&lt;/span&gt;&lt;span class="o"&gt;]:&lt;/span&gt; &lt;span class="n"&gt;http&lt;/span&gt;&lt;span class="o"&gt;://&lt;/span&gt;&lt;span class="n"&gt;daringfireball&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="na"&gt;net&lt;/span&gt;&lt;span class="sr"&gt;/projects/markdown/s&lt;/span&gt;&lt;span class="n"&gt;yntax&lt;/span&gt;
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;blockquote&gt;
+&lt;p&gt;The above file is also a great Intro to Markdown. If you didn't know that.&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;h2&gt;4. Creating HTML and Publishing&lt;/h2&gt;
+&lt;p&gt;When the article of yours is written, and safely saved in the content folder. You can burn the heat by firing up the following command in your site's directory.&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;make clean html serve
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;p&gt;The first word &lt;code&gt;make&lt;/code&gt; initiates the makefile, accepts the options &lt;code&gt;clean&lt;/code&gt;, which deletes previous builds. Which are none in your case. Then the &lt;code&gt;html&lt;/code&gt; is processed to convert to html. The last option &lt;code&gt;serve&lt;/code&gt; now opens a local server in your computer, which you can access to open your blog. In your favorite browser type &lt;code&gt;localhost:8000&lt;/code&gt; in address bar and you will have your blog running, but only on your computer.&lt;/p&gt;
+&lt;p&gt;To publish this on github, copy the contents of output folder to your git repo of branch &lt;code&gt;gh-pages&lt;/code&gt;. Then push the new commit and open your github site address. ( which normally is something like the following &lt;code&gt;user_name.github.io/repo_name&lt;/code&gt;)&lt;/p&gt;
+&lt;p&gt;Viola here is your markdown powered blog ready, now you write articles, and follow the last step to publish.&lt;/p&gt;</summary><category term="blog"></category><category term="pelican"></category></entry><entry><title>Telegram</title><link href="http://adiultra.github.io/lynx/telegram.html" rel="alternate"></link><updated>2016-01-19T10:20:00+05:30</updated><author><name>Adi Ultra</name></author><id>tag:adiultra.github.io,2016-01-19:lynx/telegram.html</id><summary type="html">&lt;h1&gt;Telegram&lt;/h1&gt;
+&lt;h2&gt;The Universal Messenger&lt;/h2&gt;
+&lt;p&gt;There is a lot of growth in the area of communication, and now messaging services are extremely popular. Telegram is one of them, and also one of the best. It is Open Source, blazingly fast, amazingly secure, and completely free. It is also cross-platform so you can message constantly, whether on PC android i-phone or Linux.&lt;/p&gt;
+&lt;h2&gt;Killer features&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;/li&gt;
+&lt;/ul&gt;</summary><category term="web"></category><category term="telegram"></category></entry><entry><title>A Light intro to Markdown</title><link href="http://adiultra.github.io/lynx/a-light-intro-to-markdown.html" rel="alternate"></link><updated>2016-01-15T15:11:00+05:30</updated><author><name>Adi Ultra</name></author><id>tag:adiultra.github.io,2016-01-15:lynx/a-light-intro-to-markdown.html</id><summary type="html">&lt;h1&gt;Markdown = Simpler HTML&lt;/h1&gt;
+&lt;p&gt;&lt;a href="https://daringfireball.net/projects/markdown/"&gt;Markdown&lt;/a&gt; created by the John Gruber, is simple text which is friendly to the eye and with an added benefit, it converts to HTML. Although not by itself, you need a program to convert it. But it is very easy to implement, read on. Many modern blogging services, forums related to programming, and Wikipedia itself, use markdown. Because its easy and plain.&lt;/p&gt;
+&lt;p&gt;Here's an example:&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span class="c"&gt;# This is first heading&lt;/span&gt;
+
+&lt;span class="n"&gt;Some&lt;/span&gt; &lt;span class="n"&gt;paragraph&lt;/span&gt; &lt;span class="n"&gt;text&lt;/span&gt;
+
+&lt;span class="c"&gt;## This is H2 tag&lt;/span&gt;
+&lt;span class="c"&gt;### H3, the first was H1&lt;/span&gt;
+&lt;span class="c"&gt;#### h4 and so on&lt;/span&gt;
+
+    &lt;span class="n"&gt;some&lt;/span&gt; &lt;span class="n"&gt;code&lt;/span&gt; &lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;indent&lt;/span&gt; &lt;span class="n"&gt;the&lt;/span&gt; &lt;span class="n"&gt;code&lt;/span&gt;&lt;span class="p"&gt;);&lt;/span&gt;
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;p&gt;Which gives:&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;h1&gt;This is first heading&lt;/h1&gt;
+&lt;p&gt;Some paragraph text&lt;/p&gt;
+&lt;h2&gt;This is H2 tag&lt;/h2&gt;
+&lt;h3&gt;H3, the first was H1&lt;/h3&gt;
+&lt;h4&gt;h4 and so on&lt;/h4&gt;
+&lt;p&gt;&lt;code&gt;some code (indent the code);&lt;/code&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;hr /&gt;
+&lt;h2&gt;Setup&lt;/h2&gt;
+&lt;blockquote&gt;
+&lt;p&gt;or it should have been no setup :p&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;You necessarily do not need anything to write in markdown other than a text editor, but since you might be intrested in publishing(blogging) in markdown, you can use any of the below&lt;/p&gt;
+&lt;h3&gt;Markdown Blogging platforms/Websites&lt;/h3&gt;
+&lt;p&gt;These are the sites with which you get a simple web interface, type in markdown, hit enter and your article goes live. If you need to really create your website then reach the next section.&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href="https://svbtle.com/"&gt;Subvtle&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://medium.com/"&gt;Medium&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://roon.io/"&gt;Roon&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="http://pen.io/"&gt;Pen.io&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3&gt;Custom Blogs&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href="http://wardrobecms.com/"&gt;Wardrobe&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="http://dropplets.com/"&gt;Dropplets&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;</summary><category term="programming"></category><category term="blog"></category><category term="web"></category></entry><entry><title>My Prime Fav</title><link href="http://adiultra.github.io/lynx/my-prime-fav.html" rel="alternate"></link><updated>2015-12-26T10:20:00+05:30</updated><author><name>Adi Ultra</name></author><id>tag:adiultra.github.io,2015-12-26:lynx/my-prime-fav.html</id><summary type="html">&lt;h1&gt;73 - The Prime&lt;/h1&gt;
+&lt;p&gt;Sheldon: "The best number is $73$. Why? 73 is the 21st prime number. Its mirror, 37, is the 12th and its mirror, 21, is the product of multiplying 7 and 3... and in binary 73 is a palindrome, 1001001, which backwards is 1001001."&lt;/p&gt;
+&lt;p&gt;$$73_{10}=1001001_2$$&lt;/p&gt;
+&lt;p&gt;Leonard: "73 is the Chuck NorrisChuck Norris of numbers!"&lt;/p&gt;
+&lt;p&gt;Sheldon: "Chuck Norris wishes... all Chuck Norris backwards gets you is Sirron Kcuhc!"&lt;/p&gt;
+&lt;p&gt;Seventy-three is the 21st prime number. The previous is seventy-one, with which it comprises the 8th twin prime. It is also a permutable prime with thirty-seven. 73 is a star number.&lt;/p&gt;
+&lt;p&gt;73 is the largest minimal Primitive root in the first 100,000 primes. In other words, if p is one of the first 100,000 primes, then at least one of the primes 3, 5, 7, 11, 13, 17, ..., 73 is a primitive root modulo p.&lt;/p&gt;
+&lt;p&gt;73 is the smallest prime congruent to 1 modulo 24.&lt;/p&gt;
+&lt;p&gt;73 is an emirp, meaning that the reverse of 73, that is, 37, is also a prime number. 73 is also the 21st prime number while 37 is the 12th prime number.&lt;/p&gt;
+&lt;p&gt;The number 21 has prime factors 7 and 3. The number 21 in binary is 10101; 7 in binary is 111, 3 in binary is 11, and seventy-three in binary is 1001001. All of these are palindromes. In addition, of the 7 binary digits representing 73, there are 3 ones.&lt;/p&gt;
+&lt;p&gt;$$37 + 12 = 49 (7^2) \:\:and,$$
+$$73 + 21 = 94 = 47 \cdot 2, \:\:\:47 + 2 = 7^2$$&lt;/p&gt;
+&lt;p&gt;Additionally, both 73 and its mirror, 37, are sexy primes twice over, as 31, 43, 67 and 79 are all prime numbers.&lt;/p&gt;
+&lt;p&gt;Every positive integer can be written as the sum of 73 or fewer sixth powers (see Waring's problem).&lt;/p&gt;
+&lt;p&gt;In base 5, the smallest prime with a composite sum of digits is 73.&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;73 is the only prime repunit in base 8 (1118).&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;73 is the smallest factor of the first composite generalized Fermat number in base 10 $ 10 ^ 4 + 1 = 10001 = 73\cdot137$ .&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;</summary><category term="prime"></category></entry></feed>

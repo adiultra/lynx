@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom"><title>Lynx</title><link href="http://adiultra.github.io/lynx/" rel="alternate"></link><link href="http://adiultra.github.io/lynx/feeds/programming.atom.xml" rel="self"></link><id>http://adiultra.github.io/lynx/</id><updated>2016-01-15T15:11:00+05:30</updated><entry><title>A Light intro to Markdown</title><link href="http://adiultra.github.io/lynx/a-light-intro-to-markdown.html" rel="alternate"></link><updated>2016-01-15T15:11:00+05:30</updated><author><name>Adi Ultra</name></author><id>tag:adiultra.github.io,2016-01-15:lynx/a-light-intro-to-markdown.html</id><summary type="html">&lt;h1&gt;Markdown = Simpler HTML&lt;/h1&gt;
+&lt;p&gt;&lt;a href="https://daringfireball.net/projects/markdown/"&gt;Markdown&lt;/a&gt; created by the John Gruber, is simple text which is friendly to the eye and with an added benefit, it converts to HTML. Although not by itself, you need a program to convert it. But it is very easy to implement, read on. Many modern blogging services, forums related to programming, and Wikipedia itself, use markdown. Because its easy and plain.&lt;/p&gt;
+&lt;p&gt;Here's an example:&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span class="c"&gt;# This is first heading&lt;/span&gt;
+
+&lt;span class="n"&gt;Some&lt;/span&gt; &lt;span class="n"&gt;paragraph&lt;/span&gt; &lt;span class="n"&gt;text&lt;/span&gt;
+
+&lt;span class="c"&gt;## This is H2 tag&lt;/span&gt;
+&lt;span class="c"&gt;### H3, the first was H1&lt;/span&gt;
+&lt;span class="c"&gt;#### h4 and so on&lt;/span&gt;
+
+    &lt;span class="n"&gt;some&lt;/span&gt; &lt;span class="n"&gt;code&lt;/span&gt; &lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;indent&lt;/span&gt; &lt;span class="n"&gt;the&lt;/span&gt; &lt;span class="n"&gt;code&lt;/span&gt;&lt;span class="p"&gt;);&lt;/span&gt;
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;p&gt;Which gives:&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;h1&gt;This is first heading&lt;/h1&gt;
+&lt;p&gt;Some paragraph text&lt;/p&gt;
+&lt;h2&gt;This is H2 tag&lt;/h2&gt;
+&lt;h3&gt;H3, the first was H1&lt;/h3&gt;
+&lt;h4&gt;h4 and so on&lt;/h4&gt;
+&lt;p&gt;&lt;code&gt;some code (indent the code);&lt;/code&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;hr /&gt;
+&lt;h2&gt;Setup&lt;/h2&gt;
+&lt;blockquote&gt;
+&lt;p&gt;or it should have been no setup :p&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;You necessarily do not need anything to write in markdown other than a text editor, but since you might be intrested in publishing(blogging) in markdown, you can use any of the below&lt;/p&gt;
+&lt;h3&gt;Markdown Blogging platforms/Websites&lt;/h3&gt;
+&lt;p&gt;These are the sites with which you get a simple web interface, type in markdown, hit enter and your article goes live. If you need to really create your website then reach the next section.&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href="https://svbtle.com/"&gt;Subvtle&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://medium.com/"&gt;Medium&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://roon.io/"&gt;Roon&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="http://pen.io/"&gt;Pen.io&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3&gt;Custom Blogs&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href="http://wardrobecms.com/"&gt;Wardrobe&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="http://dropplets.com/"&gt;Dropplets&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;</summary><category term="programming"></category><category term="blog"></category><category term="web"></category></entry></feed>
