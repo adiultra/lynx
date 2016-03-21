@@ -182,8 +182,13 @@ div#lable{
 		color: rgba(120, 120, 120, 1);
 	}
 
-	.current_page_item{
-		background-color: lighten($main-color, 25%);
+	li.current_page_item {
+		border: 2px solid $main-color;
+		border-radius: 8px;
+		text-align: center;
+		a{
+			background: none;
+		}
 	}
 	ul {
 		margin: 0;
@@ -225,7 +230,7 @@ div#lable{
 				border-left: 4px solid rgba(0, 0, 0, 0);
 				&:hover {
 					color: $main-color;
-					border-left: 4px solid $main-color;
+					text-shadow: 0px 0px 2px $main-color;
 				}
 			}
 		}
@@ -448,6 +453,8 @@ div#lable{
 	    margin:4%;
 		margin-right: auto;
 		margin-left: auto;
+
+		width: 90%;
 
 	    border: 10px solid rgb(255, 255, 255);
 		box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.1);
@@ -717,19 +724,24 @@ div#article-section > div{
 dl > h2.Archives-title {
 	padding-bottom: 2%;
 
-	color: rgb(33, 33, 33);
+	color: rgb(73, 73, 73);
 	border-bottom: 4px solid $main-color;
 
 	font-size: 3em;
+	font-family: $sans-fonts;
+	font-weight: lighter;
+	text-align: center;
 }
 
 div#article-section{
 	margin: 20px 0px;
 	padding: 12px 0px;
+	border: 4px solid rgba(0, 0, 0, 0);
 
 	text-align: center;
 	&:hover{
-		box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.27);
+		border: 4px solid $main-color;
+		border-radius: 8px;
 	}
 
 }
